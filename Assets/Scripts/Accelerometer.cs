@@ -6,18 +6,21 @@ public class Accelerometer : MonoBehaviour
 {
 	public bool isFlat = true;
 	private Rigidbody rigid;
+
+	private HFTInput m_hftInput;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		rigid = GetComponent<Rigidbody>();
+		m_hftInput = GetComponent<HFTInput>();
 	}
 	
 	// Update is called once per frame
 	void Update()
 	{
 
-		Vector3 tilt = Input.acceleration;
+		Vector3 tilt = m_hftInput.acceleration;
 
 		if (isFlat)
 		{

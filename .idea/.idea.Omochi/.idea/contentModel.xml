@@ -2,10 +2,386 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Easy WiFi Controller" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="ClientBackchannel" t="Include">
+              <e p="BoolClientBackchannel.cs" t="Include" />
+              <e p="DecimalClientBackchannel.cs" t="Include" />
+              <e p="DoubleClientBackchannel.cs" t="Include" />
+              <e p="FloatClientBackchannel.cs" t="Include" />
+              <e p="IClientBackchannel.cs" t="Include" />
+              <e p="IntClientBackchannel.cs" t="Include" />
+              <e p="StringClientBackchannel.cs" t="Include" />
+            </e>
+            <e p="ClientControllers" t="Include">
+              <e p="AccelerometerClientController.cs" t="Include" />
+              <e p="BoolDataClientController.cs" t="Include" />
+              <e p="ButtonClientController.cs" t="Include" />
+              <e p="ConnectionClientController.cs" t="Include" />
+              <e p="DecimalDataClientController.cs" t="Include" />
+              <e p="DoubleDataClientController.cs" t="Include" />
+              <e p="DpadClientController.cs" t="Include" />
+              <e p="FloatDataClientController.cs" t="Include" />
+              <e p="GyroClientController.cs" t="Include" />
+              <e p="IClientController.cs" t="Include" />
+              <e p="IntDataClientController.cs" t="Include" />
+              <e p="JoystickClientController.cs" t="Include" />
+              <e p="PinchZoomTouchpadClientController.cs" t="Include" />
+              <e p="ScrollableButtonClientController.cs" t="Include" />
+              <e p="SliderClientController.cs" t="Include" />
+              <e p="StringDataClientController.cs" t="Include" />
+              <e p="SwitchButtonClientController.cs" t="Include" />
+              <e p="TouchpadClientController.cs" t="Include" />
+            </e>
+            <e p="Core" t="Include">
+              <e p="BackchannelTypes" t="Include">
+                <e p="BoolBackchannelType.cs" t="Include" />
+                <e p="DecimalBackchannelType.cs" t="Include" />
+                <e p="DoubleBackchannelType.cs" t="Include" />
+                <e p="FloatBackchannelType.cs" t="Include" />
+                <e p="IntBackchannelType.cs" t="Include" />
+                <e p="StringBackchannelType.cs" t="Include" />
+              </e>
+              <e p="ControllerTypes" t="Include">
+                <e p="AccelerometerControllerType.cs" t="Include" />
+                <e p="BaseControllerType.cs" t="Include" />
+                <e p="ButtonControllerType.cs" t="Include" />
+                <e p="DpadControllerType.cs" t="Include" />
+                <e p="GyroControllerType.cs" t="Include" />
+                <e p="JoystickControllerType.cs" t="Include" />
+                <e p="PinchZoomTouchpadControllerType.cs" t="Include" />
+                <e p="SliderControllerType.cs" t="Include" />
+                <e p="TouchpadControllerType.cs" t="Include" />
+              </e>
+              <e p="EasyWiFiConstants.cs" t="Include" />
+              <e p="EasyWiFiController.cs" t="Include" />
+              <e p="EasyWiFiManager.cs" t="Include" />
+              <e p="EasyWiFiUtilities.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="EasyWiFiControlsMenu.cs" t="Include" />
+                <e p="EasyWiFiLandscapeController.cs" t="Include" />
+                <e p="EasyWiFiManagerEditor.cs" t="Include" />
+                <e p="EasyWiFiMenu.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Miscellaneous" t="Include">
+              <e p="alphaBlink.cs" t="Include" />
+              <e p="AnchorTextAbove.cs" t="Include" />
+              <e p="CameraFollowBall.cs" t="Include" />
+              <e p="ChangeColor.cs" t="Include" />
+              <e p="ComputerInput.cs" t="Include" />
+              <e p="ControllerConnected.cs" t="Include" />
+              <e p="painting.cs" t="Include" />
+              <e p="SelectPlayer.cs" t="Include" />
+              <e p="Spedometer.cs" t="Include" />
+              <e p="Steering.cs" t="Include" />
+            </e>
+            <e p="ServerBackchannel" t="Include">
+              <e p="BoolServerBackchannel.cs" t="Include" />
+              <e p="DecimalServerBackchannel.cs" t="Include" />
+              <e p="DoubleServerBackchannel.cs" t="Include" />
+              <e p="FloatServerBackchannel.cs" t="Include" />
+              <e p="IntServerBackchannel.cs" t="Include" />
+              <e p="IServerBackchannel.cs" t="Include" />
+              <e p="StringServerBackchannel.cs" t="Include" />
+            </e>
+            <e p="ServerControllers" t="Include">
+              <e p="CameraPinchZoomTouchpadServerController.cs" t="Include" />
+              <e p="CustomAccelerometerServerController.cs" t="Include" />
+              <e p="CustomBoolDataServerController.cs" t="Include" />
+              <e p="CustomButtonServerController.cs" t="Include" />
+              <e p="CustomDecimalDataServerController.cs" t="Include" />
+              <e p="CustomDoubleDataServerController.cs" t="Include" />
+              <e p="CustomDpadServerController.cs" t="Include" />
+              <e p="CustomFloatDataServerController.cs" t="Include" />
+              <e p="CustomGyroServerController.cs" t="Include" />
+              <e p="CustomIntDataServerController.cs" t="Include" />
+              <e p="CustomJoystickServerController.cs" t="Include" />
+              <e p="CustomPinchZoomTouchpadServerController.cs" t="Include" />
+              <e p="CustomSliderServerController.cs" t="Include" />
+              <e p="CustomStringDataServerController.cs" t="Include" />
+              <e p="CustomTouchpadServerController.cs" t="Include" />
+              <e p="EasyWiFiInputModule.cs" t="Include" />
+              <e p="IServerController.cs" t="Include" />
+              <e p="MatchOrientationGyroServerController.cs" t="Include" />
+              <e p="StandardAccelerometerServerController.cs" t="Include" />
+              <e p="StandardDpadServerController.cs" t="Include" />
+              <e p="StandardJoystickServerController.cs" t="Include" />
+              <e p="StandardSliderServerController.cs" t="Include" />
+              <e p="StandardTouchpadServerController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="HappyFunTimes" t="Include">
+          <e p="HappyFunTimesCore" t="Include">
+            <e p="DNS" t="Include">
+              <e p="Client" t="Include">
+                <e p="ClientRequest.cs" t="Include" />
+                <e p="ClientResponse.cs" t="Include" />
+                <e p="DnsClient.cs" t="Include" />
+                <e p="RequestResolver" t="Include">
+                  <e p="IRequestResolver.cs" t="Include" />
+                  <e p="NullRequestResolver.cs" t="Include" />
+                  <e p="TcpRequestResolver.cs" t="Include" />
+                  <e p="UdpRequestResolver.cs" t="Include" />
+                </e>
+                <e p="ResponseException.cs" t="Include" />
+              </e>
+              <e p="Protocol" t="Include">
+                <e p="Domain.cs" t="Include" />
+                <e p="Header.cs" t="Include" />
+                <e p="IMessage.cs" t="Include" />
+                <e p="IMessageEntry.cs" t="Include" />
+                <e p="IRequest.cs" t="Include" />
+                <e p="IResponse.cs" t="Include" />
+                <e p="Marshalling" t="Include">
+                  <e p="EndianAttribute.cs" t="Include" />
+                  <e p="Endianness.cs" t="Include" />
+                  <e p="Struct.cs" t="Include" />
+                </e>
+                <e p="OperationCode.cs" t="Include" />
+                <e p="Question.cs" t="Include" />
+                <e p="RecordClass.cs" t="Include" />
+                <e p="RecordType.cs" t="Include" />
+                <e p="Request.cs" t="Include" />
+                <e p="ResourceRecords" t="Include">
+                  <e p="BaseResourceRecord.cs" t="Include" />
+                  <e p="CanonicalNameResourceRecord.cs" t="Include" />
+                  <e p="IPAddressResourceRecord.cs" t="Include" />
+                  <e p="IResourceRecord.cs" t="Include" />
+                  <e p="MailExchangeResourceRecord.cs" t="Include" />
+                  <e p="NameServerResourceRecord.cs" t="Include" />
+                  <e p="PointerResourceRecord.cs" t="Include" />
+                  <e p="ResourceRecord.cs" t="Include" />
+                  <e p="ResourceRecordFactory.cs" t="Include" />
+                  <e p="StartOfAuthorityResourceRecord.cs" t="Include" />
+                </e>
+                <e p="Response.cs" t="Include" />
+                <e p="ResponseCode.cs" t="Include" />
+                <e p="Utils" t="Include">
+                  <e p="ByteExtensions.cs" t="Include" />
+                  <e p="ByteStream.cs" t="Include" />
+                  <e p="ObjectStringifier.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Server" t="Include">
+                <e p="DnsServer.cs" t="Include" />
+                <e p="IQuestionAnswerer.cs" t="Include" />
+                <e p="MasterFile.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="HFTHappyFunTimesSettingsEditor.cs" t="Include" />
+              <e p="HFTMenuItems.cs" t="Include" />
+              <e p="HFTProcessWebFile.cs" t="Include" />
+              <e p="HFTSetup.cs" t="Include" />
+            </e>
+            <e p="GameServer.cs" t="Include" />
+            <e p="HFTArgParser.cs" t="Include" />
+            <e p="HFTArgUtils.cs" t="Include" />
+            <e p="HFTCheck.cs" t="Include" />
+            <e p="HFTConnectionManager.cs" t="Include" />
+            <e p="HFTConstants.cs" t="Include" />
+            <e p="HFTDialog.cs" t="Include" />
+            <e p="HFTEventProcessor.cs" t="Include" />
+            <e p="HFTGameConnector.cs" t="Include" />
+            <e p="HFTGameOptions.cs" t="Include" />
+            <e p="HFTGlobalEventEmitter.cs" t="Include" />
+            <e p="HFTHappyFunTimesSettings.cs" t="Include" />
+            <e p="HFTIpUtils.cs" t="Include" />
+            <e p="HFTLog.cs" t="Include" />
+            <e p="HFTLogger.cs" t="Include" />
+            <e p="HFTManager.cs" t="Include" />
+            <e p="HFTMessageCmd.cs" t="Include" />
+            <e p="HFTNoPlayers.cs" t="Include" />
+            <e p="HFTPlayerManager.cs" t="Include" />
+            <e p="HFTPostMessages.cs" t="Include" />
+            <e p="HFTRuntimeOptions.cs" t="Include" />
+            <e p="HFTSyncedClock.cs" t="Include" />
+            <e p="HFTThreadSafe.cs" t="Include" />
+            <e p="HFTUtil.cs" t="Include" />
+            <e p="LocalNetPlayer.cs" t="Include" />
+            <e p="NetPlayer.cs" t="Include" />
+            <e p="PlayerConnectMessageArgs.cs" t="Include" />
+            <e p="PlayerConnector.cs" t="Include" />
+            <e p="PlayerSpawner.cs" t="Include" />
+            <e p="RealNetPlayer.cs" t="Include" />
+            <e p="Server" t="Include">
+              <e p="HFTBrowserVersion.cs" t="Include" />
+              <e p="HFTCaptivePortalHandler.cs" t="Include" />
+              <e p="HFTDNSRunner.cs" t="Include" />
+              <e p="HFTDNSServer.cs" t="Include" />
+              <e p="HFTDNSServerHelper.cs" t="Include" />
+              <e p="HFTDnsUtils.cs" t="Include" />
+              <e p="HFTGame.cs" t="Include" />
+              <e p="HFTGameGroup.cs" t="Include" />
+              <e p="HFTGameManager.cs" t="Include" />
+              <e p="HFTHttpRequest.cs" t="Include" />
+              <e p="HFTMimeType.cs" t="Include" />
+              <e p="HFTPlayer.cs" t="Include" />
+              <e p="HFTRelayMsgs.cs" t="Include" />
+              <e p="HFTRouter.cs" t="Include" />
+              <e p="HFTSite.cs" t="Include" />
+              <e p="HFTSocket.cs" t="Include" />
+              <e p="HFTWebFileDB.cs" t="Include" />
+              <e p="HFTWebFileLoader.cs" t="Include" />
+              <e p="HFTWebServer.cs" t="Include" />
+              <e p="HFTWebServerUtils.cs" t="Include" />
+            </e>
+          </e>
+          <e p="MoreSamples" t="Include">
+            <e p="camera" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesCameraExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleCameraGameSettings.cs" t="Include" />
+                <e p="ExampleCameraPlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="character-select" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesCharacterSelectExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleCharacterSelect.cs" t="Include" />
+                <e p="ExampleCharacterSelectGameSettings.cs" t="Include" />
+                <e p="ExampleCharacterSelectGoal.cs" t="Include" />
+                <e p="ExampleCharacterSelectPlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="clean" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesCleanExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleCleanGameSettings.cs" t="Include" />
+                <e p="ExampleCleanGoal.cs" t="Include" />
+                <e p="ExampleCleanPlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="multi-machine" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="MultiMachine-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ColorUtils.cs" t="Include" />
+                <e p="MultiMachineBirdScript.cs" t="Include" />
+                <e p="MultiMachineLevelSettings.cs" t="Include" />
+              </e>
+            </e>
+            <e p="multi-machine-syncedclock" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="MultiMachineSyncedClockExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExamplePickARandomColor.cs" t="Include" />
+                <e p="ExampleRotateBySyncClock.cs" t="Include" />
+                <e p="ExampleSetCameraAcrossMachines.cs" t="Include" />
+              </e>
+            </e>
+            <e p="simple" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesSimpleExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleSimpleGameSettings.cs" t="Include" />
+                <e p="ExampleSimpleGoal.cs" t="Include" />
+                <e p="ExampleSimplePlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="syncedclock" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="SyncedClockScene-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="SyncedClockPlayer.cs" t="Include" />
+                <e p="SyncedClockScript.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Resources" t="Include">
+            <e p="HappyFunTimesAutoGeneratedDoNotEdit" t="Include">
+              <e p="__dir__.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Samples" t="Include">
+            <e p="Scenes" t="Include">
+              <e p="2DPlatformScene-README.txt" t="Include" />
+              <e p="3DCharacterScene-README.txt" t="Include" />
+              <e p="ControllerTestScene-README.txt" t="Include" />
+              <e p="InstructionsScene-README.txt" t="Include" />
+              <e p="OrientationScene-README.txt" t="Include" />
+              <e p="PlayersAlreadyInHierarchyScene-README.txt" t="Include" />
+              <e p="SoundTestScene-README.txt" t="Include" />
+              <e p="TouchScene-README.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="BirdScript.cs" t="Include" />
+              <e p="ControllerTestScript.cs" t="Include" />
+              <e p="LevelSettings.cs" t="Include" />
+              <e p="OrientationLevelSettings.cs" t="Include" />
+              <e p="PhonePlayerScript.cs" t="Include" />
+              <e p="SoundTest.cs" t="Include" />
+              <e p="TouchGameSettings.cs" t="Include" />
+              <e p="TouchGoal.cs" t="Include" />
+              <e p="TouchPlayer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="HFTInstructionsEditor.cs" t="Include" />
+              <e p="HFTReadmeEditor.cs" t="Include" />
+              <e p="HFTReadmeFileEditor.cs" t="Include" />
+              <e p="HFTReadmeWindow.cs" t="Include" />
+            </e>
+            <e p="HFTColorUtils.cs" t="Include" />
+            <e p="HFTDirInfo.cs" t="Include" />
+            <e p="HFTGamepad.cs" t="Include" />
+            <e p="HFTGamepadHelper.cs" t="Include" />
+            <e p="HFTGlobalSoundHelper.cs" t="Include" />
+            <e p="HFTGyroscope.cs" t="Include" />
+            <e p="HFTInput.cs" t="Include" />
+            <e p="HFTInstructions.cs" t="Include" />
+            <e p="HFTPlayerNameManager.cs" t="Include" />
+            <e p="HFTReadme.cs" t="Include" />
+            <e p="HFTReadmeFile.cs" t="Include" />
+            <e p="HFTReadmeUtils.cs" t="Include" />
+            <e p="HFTSoundPlayer.cs" t="Include" />
+            <e p="HFTSounds.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="HSVRangeShader.shader" t="Include" />
+          </e>
+          <e p="Tests" t="Include">
+            <e p="Scenes" t="Include">
+              <e p="DNSTest-README.txt" t="Include" />
+              <e p="StartStopTest-README.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="HFTDnsTest.cs" t="Include" />
+              <e p="HFTStartStopTest.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="HappyFunTimes-1.x-to-2.x-Migration-README.txt" t="Include" />
+        <e p="HappyFunTimes-README.txt" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Accelerometer.cs" t="Include" />
+        </e>
+        <e p="WebPlayerTemplates" t="Include">
+          <e p="HappyFunTimes" t="Include">
+            <e p="controllers" t="Include">
+              <e p="gamepad" t="Include">
+                <e p="sounds" t="Include">
+                  <e p="sounds.jsfx.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
