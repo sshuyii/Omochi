@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using EasyWiFi.Core;
+using EasyWiFi.ServerControls;
 
 [AddComponentMenu("EasyWiFiController/Miscellaneous/ChangeColor")]
 public class ChangeColor : MonoBehaviour {
-
+    public MatchOrientationGyroServerController GyroServer;
     MeshRenderer myRenderer;
     Material myMaterial;
     Color originalColor;
@@ -23,7 +24,11 @@ public class ChangeColor : MonoBehaviour {
 
         if (isPressed)
         {
-            myMaterial.color = Color.green;
+            if ((GyroServer.isStartAverage == false) && (GyroServer.isEndAverage == false))
+            {
+                GyroServer.GetComponent<MatchOrientationGyroServerController>().StartCalculatePosition();
+                print("READY");
+            }
         }
         else
             myMaterial.color = originalColor;
