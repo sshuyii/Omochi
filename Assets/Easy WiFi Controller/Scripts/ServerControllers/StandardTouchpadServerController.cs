@@ -75,23 +75,30 @@ namespace EasyWiFi.ServerControls
             if (isTouching && lastFrameIsTouching)
             {
                 actionVector3 = EasyWiFiUtilities.getControllerVector3(horizontal - lastFrameHorizontal, vertical - lastFrameVertical, touchpadHorizontal, touchpadVertical);
+                Vector3 ModifiedActionVector3 = new Vector3();
+
+                //纠正y轴和z轴反过来了的情况
+                ModifiedActionVector3.y = actionVector3.z;
+                ModifiedActionVector3.z = actionVector3.y;
+                ModifiedActionVector3.x = actionVector3.x;
+             
 
                 switch (action)
                 {
                     case EasyWiFiConstants.ACTION_TYPE.Position:
-                        transform.position += actionVector3;
+                        transform.position += ModifiedActionVector3;
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.Rotation:
-                        transform.Rotate(actionVector3, Space.World);
+                        transform.Rotate(ModifiedActionVector3, Space.World);
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.LocalPosition:
-                        transform.Translate(actionVector3);
+                        transform.Translate(ModifiedActionVector3);
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.LocalRotation:
-                        transform.Rotate(actionVector3);
+                        transform.Rotate(ModifiedActionVector3);
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.LocalScale:
-                        transform.localScale += actionVector3;
+                        transform.localScale += ModifiedActionVector3;
                         break;
                     default:
                         Debug.Log("Invalid Action");
