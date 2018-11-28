@@ -23,7 +23,7 @@ public class PlatePosition : MonoBehaviour
 		
 		platePos.x = (Left.transform.position.x + Right.transform.position.x) / 2;
 		platePos.z = (Left.transform.position.z + Right.transform.position.z) / 2;
-		platePos.y = 2;
+		platePos.y = 14;
 		
 		
 		//盘子朝向和连线垂直

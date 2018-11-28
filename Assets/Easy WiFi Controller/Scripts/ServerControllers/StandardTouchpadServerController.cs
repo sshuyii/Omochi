@@ -75,30 +75,30 @@ namespace EasyWiFi.ServerControls
             if (isTouching && lastFrameIsTouching)
             {
                 actionVector3 = EasyWiFiUtilities.getControllerVector3(horizontal - lastFrameHorizontal, vertical - lastFrameVertical, touchpadHorizontal, touchpadVertical);
-                Vector3 ModifiedActionVector3 = new Vector3();
+                Vector3 modifiedActionVector3 = new Vector3();
 
                 //纠正y轴和z轴反过来了的情况
-                ModifiedActionVector3.y = actionVector3.z;
-                ModifiedActionVector3.z = actionVector3.y;
-                ModifiedActionVector3.x = actionVector3.x;
+                modifiedActionVector3.y = actionVector3.z;
+                modifiedActionVector3.z = actionVector3.y;
+                modifiedActionVector3.x = actionVector3.x;
              
 
                 switch (action)
                 {
                     case EasyWiFiConstants.ACTION_TYPE.Position:
-                        transform.position += ModifiedActionVector3;
+                        transform.position += modifiedActionVector3;
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.Rotation:
-                        transform.Rotate(ModifiedActionVector3, Space.World);
+                        transform.Rotate(modifiedActionVector3, Space.World);
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.LocalPosition:
-                        transform.Translate(ModifiedActionVector3);
+                        transform.Translate(modifiedActionVector3);
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.LocalRotation:
-                        transform.Rotate(ModifiedActionVector3);
+                        transform.Rotate(modifiedActionVector3);
                         break;
                     case EasyWiFiConstants.ACTION_TYPE.LocalScale:
-                        transform.localScale += ModifiedActionVector3;
+                        transform.localScale += modifiedActionVector3;
                         break;
                     default:
                         Debug.Log("Invalid Action");

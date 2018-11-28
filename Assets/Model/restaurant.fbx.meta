@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 2971fe25704fd4bb8a90fdcc137749bc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: balcony
+    100002: balcony.001
+    100004: bottles and cups
+    100006: Camera
+    100008: Chair1
+    100010: Chair1.001
+    100012: Chair1.002
+    100014: Chair1.003
+    100016: Chair1.004
+    100018: Chair1.005
+    100020: Chair1.006
+    100022: Chair1.007
+    100024: Circle
+    100026: Circle.001
+    100028: Circle.002
+    100030: Cube
+    100032: Cube.001
+    100034: Cube.002
+    100036: Cube.003
+    100038: Cube.004
+    100040: Cube.005
+    100042: Cube.006
+    100044: Cube.007
+    100046: Cube.008
+    100048: Cube.009
+    100050: Cube.010
+    100052: Cube.011
+    100054: Cube.012
+    100056: Cube.013
+    100058: Cube.014
+    100060: Cube.015
+    100062: Cube.016
+    100064: Cube.017
+    100066: Cube.018
+    100068: Cube.019
+    100070: Cylinder
+    100072: door
+    100074: huawen
+    100076: huawen.001
+    100078: huawen.002
+    100080: huawen.003
+    100082: huawen.004
+    100084: Lamp
+    100086: lamps
+    100088: meals
+    100090: pictures
+    100092: Plane
+    100094: Plane.001
+    100096: Plane.002
+    100098: plates
+    100100: //RootNode
+    100102: shelf
+    100104: Table
+    100106: Table.001
+    100108: walls and  floor.000
+    100110: walls and  floor.001
+    100112: Window
+    100114: window
+    100116: Window.001
+    400000: balcony
+    400002: balcony.001
+    400004: bottles and cups
+    400006: Camera
+    400008: Chair1
+    400010: Chair1.001
+    400012: Chair1.002
+    400014: Chair1.003
+    400016: Chair1.004
+    400018: Chair1.005
+    400020: Chair1.006
+    400022: Chair1.007
+    400024: Circle
+    400026: Circle.001
+    400028: Circle.002
+    400030: Cube
+    400032: Cube.001
+    400034: Cube.002
+    400036: Cube.003
+    400038: Cube.004
+    400040: Cube.005
+    400042: Cube.006
+    400044: Cube.007
+    400046: Cube.008
+    400048: Cube.009
+    400050: Cube.010
+    400052: Cube.011
+    400054: Cube.012
+    400056: Cube.013
+    400058: Cube.014
+    400060: Cube.015
+    400062: Cube.016
+    400064: Cube.017
+    400066: Cube.018
+    400068: Cube.019
+    400070: Cylinder
+    400072: door
+    400074: huawen
+    400076: huawen.001
+    400078: huawen.002
+    400080: huawen.003
+    400082: huawen.004
+    400084: Lamp
+    400086: lamps
+    400088: meals
+    400090: pictures
+    400092: Plane
+    400094: Plane.001
+    400096: Plane.002
+    400098: plates
+    400100: //RootNode
+    400102: shelf
+    400104: Table
+    400106: Table.001
+    400108: walls and  floor.000
+    400110: walls and  floor.001
+    400112: Window
+    400114: window
+    400116: Window.001
+    2000000: Camera
+    2100000: almofada cadeira.001
+    2100002: cushion chair.001
+    2100004: No Name
+    2100006: window.001
+    2100008: almofada cadeira
+    2100010: cushion chair
+    2100012: table
+    2100014: wall1
+    2100016: wall top
+    2100018: wall detail
+    2100020: wall
+    2100022: door
+    2100024: bank.001
+    2100026: chair.001
+    2100028: hashi
+    2100030: bowl1
+    2100032: shoyo
+    2100034: shoyo cap
+    2100036: shoyo cap.001
+    2100038: bowl2
+    2100040: lamps
+    2100042: lamps1
+    2100044: niguiri.003
+    2100046: rice
+    2100048: green 1
+    2100050: niguiri_sushi
+    2100052: niguiri
+    2100054: tray
+    2100056: water plant
+    2100058: sushi
+    2100060: tuna fish_sushi
+    2100062: stand
+    2100064: cucumber 002
+    2100066: meal  temaki
+    2100068: window1
+    2100070: window
+    2100072: picture detail
+    2100074: image picture
+    2100076: bottles 001
+    2100078: bottles 002
+    2100080: bottles_
+    2100082: bottles 003
+    2100084: bottles 004
+    2100086: bottles 005
+    2100088: cups
+    2100090: bottles 006
+    2100092: door1
+    2100094: balcony2
+    2100096: light
+    2100098: balcony.001
+    2100100: balcony1
+    2300000: balcony
+    2300002: balcony.001
+    2300004: bottles and cups
+    2300006: Chair1
+    2300008: Chair1.001
+    2300010: Chair1.002
+    2300012: Chair1.003
+    2300014: Chair1.004
+    2300016: Chair1.005
+    2300018: Chair1.006
+    2300020: Chair1.007
+    2300022: Circle
+    2300024: Circle.001
+    2300026: Circle.002
+    2300028: Cube
+    2300030: Cube.001
+    2300032: Cube.002
+    2300034: Cube.003
+    2300036: Cube.004
+    2300038: Cube.005
+    2300040: Cube.006
+    2300042: Cube.007
+    2300044: Cube.008
+    2300046: Cube.009
+    2300048: Cube.010
+    2300050: Cube.011
+    2300052: Cube.012
+    2300054: Cube.013
+    2300056: Cube.014
+    2300058: Cube.015
+    2300060: Cube.016
+    2300062: Cube.017
+    2300064: Cube.018
+    2300066: Cube.019
+    2300068: Cylinder
+    2300070: door
+    2300072: huawen
+    2300074: huawen.001
+    2300076: huawen.002
+    2300078: huawen.003
+    2300080: huawen.004
+    2300082: lamps
+    2300084: meals
+    2300086: pictures
+    2300088: Plane
+    2300090: Plane.001
+    2300092: Plane.002
+    2300094: plates
+    2300096: shelf
+    2300098: Table
+    2300100: Table.001
+    2300102: walls and  floor.000
+    2300104: walls and  floor.001
+    2300106: Window
+    2300108: window
+    2300110: Window.001
+    2300112: //RootNode
+    3300000: balcony
+    3300002: balcony.001
+    3300004: bottles and cups
+    3300006: Chair1
+    3300008: Chair1.001
+    3300010: Chair1.002
+    3300012: Chair1.003
+    3300014: Chair1.004
+    3300016: Chair1.005
+    3300018: Chair1.006
+    3300020: Chair1.007
+    3300022: Circle
+    3300024: Circle.001
+    3300026: Circle.002
+    3300028: Cube
+    3300030: Cube.001
+    3300032: Cube.002
+    3300034: Cube.003
+    3300036: Cube.004
+    3300038: Cube.005
+    3300040: Cube.006
+    3300042: Cube.007
+    3300044: Cube.008
+    3300046: Cube.009
+    3300048: Cube.010
+    3300050: Cube.011
+    3300052: Cube.012
+    3300054: Cube.013
+    3300056: Cube.014
+    3300058: Cube.015
+    3300060: Cube.016
+    3300062: Cube.017
+    3300064: Cube.018
+    3300066: Cube.019
+    3300068: Cylinder
+    3300070: door
+    3300072: huawen
+    3300074: huawen.001
+    3300076: huawen.002
+    3300078: huawen.003
+    3300080: huawen.004
+    3300082: lamps
+    3300084: meals
+    3300086: pictures
+    3300088: Plane
+    3300090: Plane.001
+    3300092: Plane.002
+    3300094: plates
+    3300096: shelf
+    3300098: Table
+    3300100: Table.001
+    3300102: walls and  floor.000
+    3300104: walls and  floor.001
+    3300106: Window
+    3300108: window
+    3300110: Window.001
+    3300112: //RootNode
+    4300000: Chair1.007
+    4300002: Chair1.006
+    4300004: Chair1.005
+    4300006: Chair1.004
+    4300008: Chair1.003
+    4300010: Chair1.002
+    4300012: Chair1.001
+    4300014: Table.001
+    4300016: Cube.019
+    4300018: Cube.018
+    4300020: Cube.017
+    4300022: Cube.016
+    4300024: Cube.015
+    4300026: Cube.012
+    4300028: Window.001
+    4300030: Cube.014
+    4300032: Cylinder
+    4300034: Cube.013
+    4300036: Cube.011
+    4300038: Cube.010
+    4300040: Cube.009
+    4300042: Cube.008
+    4300044: Plane.002
+    4300046: Cube.007
+    4300048: Cube.006
+    4300050: Plane.001
+    4300052: Cube.005
+    4300054: Cube.004
+    4300056: Cube.003
+    4300058: Window
+    4300060: Circle.002
+    4300062: Cube
+    4300064: huawen.001
+    4300066: Chair1
+    4300068: Table
+    4300070: huawen.004
+    4300072: huawen.003
+    4300074: huawen.002
+    4300076: huawen
+    4300078: walls and  floor.000
+    4300080: Plane
+    4300082: Cube.001
+    4300084: Cube.002
+    4300086: Circle.001
+    4300088: Circle
+    4300090: walls and  floor.001
+    4300092: plates
+    4300094: lamps
+    4300096: meals
+    4300098: window
+    4300100: pictures
+    4300102: bottles and cups
+    4300104: door
+    4300106: shelf
+    4300108: balcony
+    4300110: balcony.001
+    10800000: Lamp
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
