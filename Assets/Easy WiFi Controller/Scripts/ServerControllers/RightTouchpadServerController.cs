@@ -3,11 +3,11 @@ using System.Collections;
 using EasyWiFi.Core;
 using System;
 using UnityEngine.UI;
+
 namespace EasyWiFi.ServerControls
 {
 
-    [AddComponentMenu("EasyWiFiController/Server/UserControls/Standard Touchpad")]
-    public class StandardTouchpadServerController : MonoBehaviour, IServerController
+    public class RightTouchpadServerController : MonoBehaviour, IServerController
     {
 
         public string control;
@@ -29,9 +29,8 @@ namespace EasyWiFi.ServerControls
         bool lastFrameIsTouching;
 
         private float firstTouchPosY;
-        public float touchMoveYLeft;
+        public float touchMoveYRight;
         public Text printText;
-
 
         void OnEnable()
         {
@@ -63,60 +62,12 @@ namespace EasyWiFi.ServerControls
             }
         }
 
-
-
-        /*public void mapDataStructureToAction(int index)
-        {
-            lastFrameHorizontal = horizontal;
-            lastFrameVertical = vertical;
-            lastFrameIsTouching = isTouching;
-
-            horizontal = touchpad[index].POSITION_HORIZONTAL * sensitivity;
-            vertical = touchpad[index].POSITION_VERTICAL * sensitivity;
-            isTouching = touchpad[index].IS_TOUCHING;
-
-            //only if we were touching both last frame and this
-            if (isTouching && lastFrameIsTouching)
-            {
-                actionVector3 = EasyWiFiUtilities.getControllerVector3(horizontal - lastFrameHorizontal, vertical - lastFrameVertical, touchpadHorizontal, touchpadVertical);
-                Vector3 modifiedActionVector3 = new Vector3();
-
-                //纠正y轴和z轴反过来了的情况
-                modifiedActionVector3.y = actionVector3.z;
-                modifiedActionVector3.z = actionVector3.y;
-                modifiedActionVector3.x = actionVector3.x;
-             
-
-                switch (action)
-                {
-                    case EasyWiFiConstants.ACTION_TYPE.Position:
-                        transform.position += modifiedActionVector3;
-                        break;
-                    case EasyWiFiConstants.ACTION_TYPE.Rotation:
-                        transform.Rotate(modifiedActionVector3, Space.World);
-                        break;
-                    case EasyWiFiConstants.ACTION_TYPE.LocalPosition:
-                        transform.Translate(modifiedActionVector3);
-                        break;
-                    case EasyWiFiConstants.ACTION_TYPE.LocalRotation:
-                        transform.Rotate(modifiedActionVector3);
-                        break;
-                    case EasyWiFiConstants.ACTION_TYPE.LocalScale:
-                        transform.localScale += modifiedActionVector3;
-                        break;
-                    default:
-                        Debug.Log("Invalid Action");
-                        break;
-
-                }
-            }
-        }*/
         public void mapDataStructureToAction(int index)
         {
             lastFrameIsTouching = isTouching;
             if (!lastFrameIsTouching)
             {
-                firstTouchPosY = touchpad[index].POSITION_VERTICAL;
+                firstTouchPosY = touchpad[index].POSITION_VERTICAL; //记录第一次摸到的Yposition
             }
 
             isTouching = touchpad[index].IS_TOUCHING;
@@ -127,13 +78,13 @@ namespace EasyWiFi.ServerControls
             //only if we were touching both last frame and this
             if (isTouching && lastFrameIsTouching)
             {
-                touchMoveYLeft = vertical - firstTouchPosY;               
+                touchMoveYRight= vertical - firstTouchPosY; //如果持续触摸，就用这次的Y减去第一次摸到的Y
+                printText.text = "touchMoveYRight" + touchMoveYRight;
             }
             if(!isTouching)
             {
-                touchMoveYLeft = 0;
+                touchMoveYRight = 0; //手指离开就重置为0
             }
-            printText.text = "touchMoveYLeft" + touchMoveYLeft;
         }
         public void checkForNewConnections(bool isConnect, int playerNumber)
         {

@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlatePosition : MonoBehaviour
 {
 
-
 	public GameObject Left;
 	public GameObject Right;
 	public GameObject PlateRef;
