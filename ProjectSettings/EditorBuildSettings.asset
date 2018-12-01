@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Easy WiFi Controller/Scenes/Client/SteeringWheelClientScene.unity
     guid: f347c844d2c0a8640bff7802ae9a6dd4
+  - enabled: 0
+    path: Assets/Easy WiFi Controller/Scenes/Server/PanTiltZoomServerScene.unity
+    guid: 62675f59fa05ac74c967e8cb823cb5fc
+  - enabled: 0
+    path: Assets/Easy WiFi Controller/Scenes/Server/SteeringWheelServerScene.unity
+    guid: b518e683ea0206749a30a9109a74f74c
   m_configObjects: {}

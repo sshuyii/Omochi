@@ -107,6 +107,7 @@
               <e p="EasyWiFiInputModule.cs" t="Include" />
               <e p="IServerController.cs" t="Include" />
               <e p="MatchOrientationGyroServerController.cs" t="Include" />
+              <e p="RightTouchpadServerController.cs" t="Include" />
               <e p="StandardAccelerometerServerController.cs" t="Include" />
               <e p="StandardDpadServerController.cs" t="Include" />
               <e p="StandardJoystickServerController.cs" t="Include" />
@@ -371,7 +372,11 @@
         <e p="HappyFunTimes-README.txt" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Accelerometer.cs" t="Include" />
+          <e p="DishAppear.cs" t="Include" />
           <e p="PlatePosition.cs" t="Include" />
+          <e p="PlayerMove.cs" t="Include" />
+          <e p="PotatoesCollider.cs" t="Include" />
+          <e p="PotatoSwitchControl.cs" t="Include" />
         </e>
         <e p="WebPlayerTemplates" t="Include">
           <e p="HappyFunTimes" t="Include">

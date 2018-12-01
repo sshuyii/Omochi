@@ -2,6 +2,7 @@
 using System.Collections;
 using EasyWiFi.Core;
 using System;
+using UnityEngine.UI;
 
 namespace EasyWiFi.ClientBackchannels
 {
@@ -9,7 +10,10 @@ namespace EasyWiFi.ClientBackchannels
     [AddComponentMenu("EasyWiFiController/Client/Backchannels/Bool Backchannel")]
     public class BoolClientBackchannel : MonoBehaviour, IClientBackchannel
     {
-
+        //试图debug
+        public Text ButtonText;
+        public Text KeyText;
+        
         public string controlName = "Bool1";
         public string notifyMethod = "yourMethod";
         [Tooltip("Determines when your Notify Method gets called")]
@@ -34,13 +38,21 @@ namespace EasyWiFi.ClientBackchannels
             {
                 mapDataStructureToMethod();
             }
+            //试图debug
+            KeyText.text = boolBackchannel.serverKey;
         }
 
 
         public void mapDataStructureToMethod()
         {
             if (callType == EasyWiFiConstants.CALL_TYPE.Every_Frame)
+            {
                 SendMessage(notifyMethod, boolBackchannel, SendMessageOptions.DontRequireReceiver);
+                
+                
+            }
+            
+            
             else
             {
                 if (lastValue != boolBackchannel.BOOL_VALUE)
@@ -48,6 +60,11 @@ namespace EasyWiFi.ClientBackchannels
                     SendMessage(notifyMethod, boolBackchannel, SendMessageOptions.DontRequireReceiver);
                 }
                 lastValue = boolBackchannel.BOOL_VALUE;
+                
+                //试图debug
+                ButtonText.text = lastValue.ToString();
+                
+
             }
         }
     }

@@ -10,7 +10,10 @@ public class ChangeColor : MonoBehaviour {
     Material myMaterial;
     Color originalColor;
     bool isPressed;
+    
+    public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
 
+  
     void Start() 
     {
         myRenderer = this.GetComponent<MeshRenderer>();

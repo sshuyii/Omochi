@@ -10,7 +10,7 @@ namespace EasyWiFi.ClientControls
     {
 
         public string controlName = "Touchpad1";
-
+        
         TouchpadControllerType touchpad;
         Image touchpadImage;
         string touchpadKey;

@@ -12,6 +12,8 @@ namespace EasyWiFi.ServerBackchannels
         //inspector
         public string control = "Bool1";
         public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
+        //试图debug
+        public Text setValueText;
 
         //runtime variables
         BoolBackchannelType[] boolBackchannel = new BoolBackchannelType[EasyWiFiConstants.MAX_CONTROLLERS];
@@ -58,6 +60,8 @@ namespace EasyWiFi.ServerBackchannels
         {
             //for properties DO NOT reset to default values becasue there isn't a default
             boolBackchannel[index].BOOL_VALUE = value;
+            setValueText.text = value.ToString();
+
         }
 
         public void checkForNewConnections(bool isConnect, int playerNumber)

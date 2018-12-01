@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using EasyWiFi.ServerControls;
+using EasyWiFi.Core;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class PlayerMove : MonoBehaviour
 	private float moveR;
 
 	public float speed = 50.0f;
+	public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
+
 
 	public float radius = 0.3f;
 	// Use this for initialization
