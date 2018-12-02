@@ -18,7 +18,8 @@ namespace EasyWiFi.ClientControls
         string buttonKey;
         Rect screenPixelsRect;
         int touchCount;
-        bool pressed;
+        public bool pressed;
+        public Text pressedText;
 
         // Use this for initialization
         void Awake()
@@ -38,6 +39,8 @@ namespace EasyWiFi.ClientControls
         //here we grab the input and map it to the data list
         void Update()
         {
+            pressedText.text = pressed.ToString();
+            
             mapInputToDataStream();
         }
 
@@ -58,6 +61,7 @@ namespace EasyWiFi.ClientControls
                         Input.mousePosition.y <= (screenPixelsRect.y + screenPixelsRect.height))
                 {
                     pressed = true;
+                   
                 }
 
             }
@@ -89,6 +93,7 @@ namespace EasyWiFi.ClientControls
             {
                 button.BUTTON_STATE_IS_PRESSED = true;
                 currentImage.sprite = buttonPressedSprite;
+               
             }
             else
             {

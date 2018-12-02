@@ -7,7 +7,7 @@ using EasyWiFi.Core;
 public class PotatoSwitchControl : MonoBehaviour
 {
 	public Text ValueText;
-	public GameObject PickUpSwitch;
+	public GameObject PotatoSwitch;
 	// Use this for initialization
 	void Start () {
 		
@@ -20,12 +20,12 @@ public class PotatoSwitchControl : MonoBehaviour
 		//if potatoes
 		if(intBackchannel.INT_VALUE == 1)
 		{
-			PickUpSwitch.SetActive(true);
+			PotatoSwitch.SetActive(true);
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
 		}
 		else
 		{
-			PickUpSwitch.SetActive(false);
+			PotatoSwitch.SetActive(false);
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
 
 		}

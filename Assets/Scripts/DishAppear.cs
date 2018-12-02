@@ -2,33 +2,53 @@
 using System.Collections.Generic;
 using UnityEngine;
 using EasyWiFi.Core;
+using UnityEngine.UI;
 
 public class DishAppear : MonoBehaviour
 {
+	public Text dishAppearText;
 	public GameObject PlayerPlate;
+	public GameObject potato;
+	bool isPressed;
+	public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
+	public bool pickUp;
 		
 	// Use this for initialization
 	void Start () {
 		
+		//Resources.Load<GameObject>("Prefabs/Dish");
+
 	}
 	
 
-	public void potatoOnPlate(BoolBackchannelType boolBackchannel)
+	public void potatoOnPlate(ButtonControllerType button)
 	{
-
-		if (boolBackchannel.BOOL_VALUE)
+		
+		isPressed = button.BUTTON_STATE_IS_PRESSED;
+		
+		if (isPressed && !pickUp)
 		{
-			GameObject Potato = Resources.Load<GameObject>("Prefabs/Potato");
+	
+			dishAppearText.text = "pressed";
 			
 			Vector3 dishPos;
 			dishPos.x = PlayerPlate.transform.position.x;
-			dishPos.y = PlayerPlate.transform.position.y;
-			dishPos.z = PlayerPlate.transform.position.z + 2;
+			dishPos.y = PlayerPlate.transform.position.y + 2.0f;
+			dishPos.z = PlayerPlate.transform.position.z;
 
-			Potato.transform.position = dishPos;
-			
-				
-			boolBackchannel.BOOL_VALUE = false;
+			Instantiate(potato);
+			pickUp = true;
+			potato.transform.position = dishPos;
+
+
+
 		}
+		else if(!isPressed)
+		{
+			dishAppearText.text = "unpressed";
+			pickUp = false;
+
+		}
+
 	}
 }
