@@ -378,6 +378,7 @@
           <e p="PlayerMove.cs" t="Include" />
           <e p="PotatoesCollider.cs" t="Include" />
           <e p="PotatoSwitchControl.cs" t="Include" />
+          <e p="RaycastingControllerFromPlate.cs" t="Include" />
           <e p="SetDishImageParent.cs" t="Include" />
         </e>
         <e p="WebPlayerTemplates" t="Include">

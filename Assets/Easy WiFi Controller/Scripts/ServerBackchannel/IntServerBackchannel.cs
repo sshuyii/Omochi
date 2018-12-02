@@ -9,6 +9,8 @@ namespace EasyWiFi.ServerBackchannels
     [AddComponentMenu("EasyWiFiController/Server/Backchannels/Int Backchannel")]
     public class IntServerBackchannel : MonoBehaviour, IServerBackchannel
     {
+
+        public Text transferValue;
         //inspector
         public string control = "Int1";
         public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
@@ -52,6 +54,7 @@ namespace EasyWiFi.ServerBackchannels
         public void setValue(int newValue)
         {
             value = newValue;
+            transferValue.text = value.ToString();
         }
 
         public void mapPropertyToDataStream(int index)

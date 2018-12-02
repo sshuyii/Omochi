@@ -23,7 +23,7 @@ public class PotatoSwitchControl : MonoBehaviour
 			PotatoSwitch.SetActive(true);
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
 		}
-		else
+		else if(intBackchannel.INT_VALUE == 0)
 		{
 			PotatoSwitch.SetActive(false);
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
