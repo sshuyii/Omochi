@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 using EasyWiFi.Core;
 
+
+
 namespace EasyWiFi.ClientControls
 {
     [AddComponentMenu("EasyWiFiController/Client/UserControls/Switch")]
@@ -16,41 +18,75 @@ namespace EasyWiFi.ClientControls
         public float fastestPressRate = 1.0f;
 
         ButtonControllerType button;
-        Image currentImage;
-        Sprite buttonRegularSprite;
+        //Image currentImage;
+        //Sprite buttonRegularSprite;
         string buttonKey;
-        Rect screenPixelsRect;
+        //Rect screenPixelsRect;
         int touchCount;
         bool pressed;
         bool momentartyLock;
+        public Text OnOrOff;
+        
 
         // Use this for initialization
         void Awake()
         {
             buttonKey = EasyWiFiController.registerControl(EasyWiFiConstants.CONTROLLERTYPE_BUTTON, controlName);
             button = (ButtonControllerType)EasyWiFiController.controllerDataDictionary[buttonKey];
-            currentImage = gameObject.GetComponent<Image>();
-            buttonRegularSprite = currentImage.sprite;
+            //currentImage = gameObject.GetComponent<Image>();
+            //buttonRegularSprite = currentImage.sprite;
 
         }
 
         void Start()
         {
-            screenPixelsRect = EasyWiFiUtilities.GetScreenRect(currentImage.rectTransform);
+            //screenPixelsRect = EasyWiFiUtilities.GetScreenRect(currentImage.rectTransform);
         }
 
         //here we grab the input and map it to the data list
         void Update()
-        {
-            mapInputToDataStream();
+        {           
+            if (pressed)
+            {
+                button.BUTTON_STATE_IS_PRESSED = true;            
+            }
+            else
+            {
+                button.BUTTON_STATE_IS_PRESSED = false;
+            }
         }
 
         void resetLock()
         {
-            momentartyLock = false;
+            //momentartyLock = false;
         }
 
         public void mapInputToDataStream()
+        {
+            print("click");
+
+
+            if (pressed)
+            {
+                pressed = false;
+                OnOrOff.text = "Off";
+            }
+
+            else
+            {
+                pressed = true;
+                OnOrOff.text = "On";
+
+            }
+
+
+
+
+
+
+        }
+
+        /*public void mapInputToDataStream()
         {
 
             //this is a switch so don't reset to default values
@@ -126,7 +162,7 @@ namespace EasyWiFi.ClientControls
 
             }
 
-        }
+        }*/
 
     }
 
