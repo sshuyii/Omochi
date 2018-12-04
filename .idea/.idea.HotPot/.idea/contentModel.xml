@@ -371,7 +371,6 @@
         <e p="HappyFunTimes-1.x-to-2.x-Migration-README.txt" t="Include" />
         <e p="HappyFunTimes-README.txt" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="Accelerometer.cs" t="Include" />
           <e p="dishApearOnPhone.cs" t="Include" />
           <e p="DishAppear.cs" t="Include" />
           <e p="PlatePosition.cs" t="Include" />
@@ -379,7 +378,6 @@
           <e p="PotatoesCollider.cs" t="Include" />
           <e p="PotatoSwitchControl.cs" t="Include" />
           <e p="RaycastingControllerFromPlate.cs" t="Include" />
-          <e p="SetDishImageParent.cs" t="Include" />
         </e>
         <e p="WebPlayerTemplates" t="Include">
           <e p="HappyFunTimes" t="Include">

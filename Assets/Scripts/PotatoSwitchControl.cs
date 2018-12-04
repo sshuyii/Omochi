@@ -8,6 +8,7 @@ public class PotatoSwitchControl : MonoBehaviour
 {
 	public Text ValueText;
 	public GameObject PotatoSwitch;
+	public GameObject HamSwitch;
 	// Use this for initialization
 	void Start () {
 		
@@ -23,14 +24,21 @@ public class PotatoSwitchControl : MonoBehaviour
 			PotatoSwitch.SetActive(true);
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
 		}
+		//if ham
+		else if(intBackchannel.INT_VALUE == 2)
+		{
+			HamSwitch.SetActive(true);
+			ValueText.text = intBackchannel.INT_VALUE.ToString();
+		}
+		//if none of vegetables nor meat
 		else if(intBackchannel.INT_VALUE == 0)
 		{
 			PotatoSwitch.SetActive(false);
+			HamSwitch.SetActive(false);
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
 
 		}
 		
-		//if lamb
 	}
 
 	

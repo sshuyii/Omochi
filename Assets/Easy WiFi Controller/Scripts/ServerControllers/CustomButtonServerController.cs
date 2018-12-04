@@ -19,7 +19,7 @@ namespace EasyWiFi.ServerControls
 
         //runtime variables
         ButtonControllerType[] button = new ButtonControllerType[EasyWiFiConstants.MAX_CONTROLLERS];
-        int currentNumberControllers = 0;
+        int currentNumberControllers = 3;
         bool lastValue = false;
 
 

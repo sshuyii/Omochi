@@ -9,6 +9,8 @@ TagManager:
   - Player3
   - Player4
   - Potato
+  - Ham
+  - Ignored
   layers:
   - Default
   - TransparentFX

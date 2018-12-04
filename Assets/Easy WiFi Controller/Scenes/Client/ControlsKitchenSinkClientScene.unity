@@ -244,6 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueText: {fileID: 3869604}
   PotatoSwitch: {fileID: 1399990242}
+  HamSwitch: {fileID: 1445348022}
 --- !u!114 &24534875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +297,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 0c9ddb6d34d760646a3325d9e4e26139, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1409,6 +1410,7 @@ RectTransform:
   - {fileID: 497380271}
   - {fileID: 24534873}
   - {fileID: 1399990243}
+  - {fileID: 1445348023}
   - {fileID: 478281300}
   m_Father: {fileID: 360893007}
   m_RootOrder: 0
@@ -1631,7 +1633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1399990243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1713,7 +1715,7 @@ MonoBehaviour:
   controlName: PotatoPlayer1
   buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
     type: 3}
-  pressed: 1
+  pressed: 0
   pressedText: {fileID: 611645391}
 --- !u!114 &1399990248
 MonoBehaviour:
@@ -1727,10 +1729,129 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 1399990242}
-  Potato: {fileID: 1606935943879702, guid: e659a8ff27b9e4862b37f5ce8a0541c6, type: 2}
+  Dish: {fileID: 1606935943879702, guid: e659a8ff27b9e4862b37f5ce8a0541c6, type: 2}
   PotatoText: {fileID: 1221108936}
   AlreadyAppeared: 0
   clientControlPanel: {fileID: 1217711025}
+--- !u!1 &1445348022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445348023}
+  - component: {fileID: 1445348028}
+  - component: {fileID: 1445348027}
+  - component: {fileID: 1445348026}
+  - component: {fileID: 1445348025}
+  - component: {fileID: 1445348024}
+  m_Layer: 0
+  m_Name: HamSwitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1445348023
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445348022}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999124, y: 0.99999124, z: 0.99999124}
+  m_Children: []
+  m_Father: {fileID: 1217711026}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -420.8, y: -64.999985}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &1445348024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445348022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4c03b79684842fa9116e692db21c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 1445348022}
+  Dish: {fileID: 1382300803719012, guid: 9d9e52ea42c624bbcb38d78fe3709b56, type: 2}
+  PotatoText: {fileID: 1221108936}
+  AlreadyAppeared: 0
+  clientControlPanel: {fileID: 1217711025}
+--- !u!114 &1445348025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445348022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d043ae6611b3f240b3ad4a1ab3b79e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlName: HamPlayer1
+  buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
+    type: 3}
+  pressed: 0
+  pressedText: {fileID: 611645391}
+--- !u!114 &1445348026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445348022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 0c9ddb6d34d760646a3325d9e4e26139, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1445348027
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445348022}
+  m_CullTransparentMesh: 0
+--- !u!114 &1445348028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445348022}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07a9911f663f4449853025b9c711ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlName: PotatoPlayer1
+  buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
+    type: 3}
+  fastestPressRate: 1
 --- !u!1 &1462395857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,7 +2097,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}

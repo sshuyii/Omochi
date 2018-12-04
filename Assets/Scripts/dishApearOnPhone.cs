@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using EasyWiFi.ClientControls;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class dishApearOnPhone : MonoBehaviour
 {
 	public GameObject self;
-	public GameObject Potato;
+	[FormerlySerializedAs("Potato")] public GameObject Dish;
 	public Text PotatoText;
 	public bool AlreadyAppeared;
 	public GameObject clientControlPanel;
@@ -27,13 +28,13 @@ public class dishApearOnPhone : MonoBehaviour
 		if (self.GetComponent<ButtonClientController>().pressed && !AlreadyAppeared)
 		{
 			PotatoText.text = "Pressed";
-			var PotatoPhone = Instantiate(Potato);
+			var PotatoPhone = Instantiate(Dish);
 			PotatoPhone.transform.SetParent(clientControlPanel.transform);
 			
 
 			Vector3 onPlate = new Vector3();
-			onPlate.x = 100;
-			onPlate.y = 40;
+			onPlate.x = 300;
+			onPlate.y = 150;
 			onPlate.z = 0;
 
 			PotatoPhone.transform.position = onPlate;		

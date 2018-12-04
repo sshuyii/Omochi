@@ -17,7 +17,7 @@ namespace EasyWiFi.ServerBackchannels
 
         //runtime variables
         IntBackchannelType[] intBackchannel = new IntBackchannelType[EasyWiFiConstants.MAX_CONTROLLERS];
-        int currentNumberControllers = 0;
+        int currentNumberControllers = 3;
 
         //variable other script will modify via setValue to be sent across the backchannel
         int value;
@@ -54,6 +54,7 @@ namespace EasyWiFi.ServerBackchannels
         public void setValue(int newValue)
         {
             value = newValue;
+            //自行debug
             transferValue.text = value.ToString();
         }
 

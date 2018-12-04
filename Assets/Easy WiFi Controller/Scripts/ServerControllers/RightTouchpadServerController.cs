@@ -19,7 +19,7 @@ namespace EasyWiFi.ServerControls
 
         //runtime variables
         TouchpadControllerType[] touchpad = new TouchpadControllerType[EasyWiFiConstants.MAX_CONTROLLERS];
-        int currentNumberControllers = 1;
+        int currentNumberControllers = 3;
         Vector3 actionVector3;
         float horizontal;
         float vertical;
