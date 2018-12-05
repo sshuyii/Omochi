@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
 
 	private float moveL;
 	private float moveR;
-
+	
 	public float speed = 50.0f;
 	public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
 
