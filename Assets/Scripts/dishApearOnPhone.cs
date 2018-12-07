@@ -47,5 +47,8 @@ public class dishApearOnPhone : MonoBehaviour
 			PotatoText.text = "unPressed";
 			AlreadyAppeared = false;
 		}
+		
 	}
+	
+	
 }

@@ -202,9 +202,9 @@ GameObject:
   - component: {fileID: 24534879}
   - component: {fileID: 24534878}
   - component: {fileID: 24534877}
-  - component: {fileID: 24534876}
   - component: {fileID: 24534874}
   - component: {fileID: 24534875}
+  - component: {fileID: 24534876}
   m_Layer: 0
   m_Name: VeganSwitchController
   m_TagString: Untagged
@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -549, y: -50}
+  m_AnchoredPosition: {x: -549, y: 33}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &24534874
@@ -261,20 +261,16 @@ MonoBehaviour:
 --- !u!114 &24534876
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114876416643060614, guid: 01d312eb6008c470f8a84a3aa83ce137,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 24534872}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39b463a54c37b9040a00b64b7d31e9e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 02d4257569746a248a28bb79004eb87b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonText: {fileID: 1142303269}
-  KeyText: {fileID: 372606905}
-  controlName: Bool1
-  notifyMethod: ButtonActivate
-  callType: 0
+  controlName: Int2
+  notifyMethod: Dish2D
 --- !u!114 &24534877
 MonoBehaviour:
   m_ObjectHideFlags: 0

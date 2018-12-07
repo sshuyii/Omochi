@@ -45,7 +45,7 @@ public class DishAppear : MonoBehaviour
 	
 				Vector3 dishPos;
 				dishPos.x = PlayerPlate.transform.position.x;
-				dishPos.y = PlayerPlate.transform.position.y + 2.0f;
+				dishPos.y = PlayerPlate.transform.position.y + 0.2f;
 				dishPos.z = PlayerPlate.transform.position.z;
 
 				Instantiate(DishName);

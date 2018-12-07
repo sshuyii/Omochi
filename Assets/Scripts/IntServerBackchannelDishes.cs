@@ -6,21 +6,21 @@ using EasyWiFi.Core;
 
 namespace EasyWiFi.ServerBackchannels
 {
-    [AddComponentMenu("EasyWiFiController/Server/Backchannels/Bool Backchannel")]
-    public class BoolServerBackchannel : MonoBehaviour, IServerBackchannel
+    [AddComponentMenu("EasyWiFiController/Server/Backchannels/Int Backchannel")]
+    public class IntServerBackchannelDishes : MonoBehaviour, IServerBackchannel
     {
+
+        //public Text transferValue;
         //inspector
-        public string control = "Bool1";
+        public string control = "Int1";
         public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
-        //试图debug
-       // public Text setValueText;
 
         //runtime variables
-        BoolBackchannelType[] boolBackchannel = new BoolBackchannelType[EasyWiFiConstants.MAX_CONTROLLERS];
-        int currentNumberControllers = 0;
+        IntBackchannelType[] intBackchannel = new IntBackchannelType[EasyWiFiConstants.MAX_CONTROLLERS];
+        int currentNumberControllers = 3;
 
         //variable other script will modify via setValue to be sent across the backchannel
-        bool value;
+        int value;
 
         void OnEnable()
         {
@@ -28,9 +28,9 @@ namespace EasyWiFi.ServerBackchannels
 
             //do one check at the beginning just in case we're being spawned after startup and after the callbacks
             //have already been called
-            if (boolBackchannel[0] == null && EasyWiFiController.lastConnectedPlayerNumber >= 0)
+            if (intBackchannel[0] == null && EasyWiFiController.lastConnectedPlayerNumber >= 0)
             {
-                EasyWiFiUtilities.checkForClient(control, (int)player, ref boolBackchannel, ref currentNumberControllers);
+                EasyWiFiUtilities.checkForClient(control, (int)player, ref intBackchannel, ref currentNumberControllers);
             }
         }
 
@@ -44,29 +44,29 @@ namespace EasyWiFi.ServerBackchannels
             //iterate over the current number of connected controllers
             for (int i = 0; i < currentNumberControllers; i++)
             {
-                if (boolBackchannel[i] != null && boolBackchannel[i].serverKey != null && boolBackchannel[i].logicalPlayerNumber != EasyWiFiConstants.PLAYERNUMBER_DISCONNECTED)
+                if (intBackchannel[i] != null && intBackchannel[i].serverKey != null && intBackchannel[i].logicalPlayerNumber != EasyWiFiConstants.PLAYERNUMBER_DISCONNECTED)
                 {
                     mapPropertyToDataStream(i);
                 }
             }
         }
 
-        public void setValue(bool newValue)
+        public void setValue(int newValue)
         {
             value = newValue;
+            //自行debug
+            //transferValue.text = value.ToString();
         }
 
         public void mapPropertyToDataStream(int index)
         {
             //for properties DO NOT reset to default values becasue there isn't a default
-            boolBackchannel[index].BOOL_VALUE = value;
-            //setValueText.text = value.ToString();
-
+            intBackchannel[index].INT_VALUE = value;
         }
 
         public void checkForNewConnections(bool isConnect, int playerNumber)
         {
-            EasyWiFiUtilities.checkForClient(control, (int)player, ref boolBackchannel, ref currentNumberControllers);
+            EasyWiFiUtilities.checkForClient(control, (int)player, ref intBackchannel, ref currentNumberControllers);
         }
 
     }
