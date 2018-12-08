@@ -94,12 +94,24 @@ namespace EasyWiFi.ClientControls
 
         }
 
-        IEnumerator WaitForSeconds()
-        {
-            yield return new WaitForSeconds(0.2f);
-            pressed = false;
-            button.BUTTON_STATE_IS_PRESSED = false;
-        }
+//        IEnumerator WaitForSeconds()
+//        {
+//            yield return new WaitForSeconds(0.2f);
+//            pressed = false;
+//            button.BUTTON_STATE_IS_PRESSED = false;
+//        }
+//
+//        public void mapInputToDataStream()
+//        {
+//            if (!pressed)
+//            {
+//                pressed = true;
+//                button.BUTTON_STATE_IS_PRESSED = true;
+//                StartCoroutine(WaitForSeconds());
+//                //OnOrOff.text = "Off";
+//            }
+//
+//        }
 
         public void mapInputToDataStream()
         {
@@ -107,16 +119,18 @@ namespace EasyWiFi.ClientControls
             {
                 pressed = true;
                 button.BUTTON_STATE_IS_PRESSED = true;
-                StartCoroutine(WaitForSeconds());
-                //OnOrOff.text = "Off";
+            }
+
+            if (pressed)
+            {
+                pressed = false;
+                button.BUTTON_STATE_IS_PRESSED = false;
             }
 
         }
 
 
-
-
-        }
+        
 
         /*public void mapInputToDataStream()
         {

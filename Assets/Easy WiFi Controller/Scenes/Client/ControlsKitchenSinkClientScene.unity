@@ -323,7 +323,6 @@ MonoBehaviour:
   buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
     type: 3}
   fastestPressRate: 1
-  OnOrOff: {fileID: 0}
 --- !u!1 &288141191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,7 +1439,6 @@ MonoBehaviour:
   buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
     type: 3}
   fastestPressRate: 1
-  OnOrOff: {fileID: 1925944787}
 --- !u!114 &1176565648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,8 +1868,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 45680998936c5401eaa8f9408ae136f4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1900,7 +1898,6 @@ MonoBehaviour:
   buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
     type: 3}
   fastestPressRate: 1
-  OnOrOff: {fileID: 0}
 --- !u!114 &1399990247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2126,7 +2123,6 @@ MonoBehaviour:
   buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
     type: 3}
   fastestPressRate: 1
-  OnOrOff: {fileID: 0}
 --- !u!114 &1445348029
 MonoBehaviour:
   m_ObjectHideFlags: 0

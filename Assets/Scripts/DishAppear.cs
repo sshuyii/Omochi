@@ -24,7 +24,7 @@ public class DishAppear : MonoBehaviour
 	public GameObject Onion;
 	public GameObject Tomato;
 	public GameObject Garlic;
-
+	private bool LastFrameIsPressed = false;
 	public RaycastingControllerFromPlate RaycastScript;
 	//此脚本中自定义的potatoOnPlate函数并没有每一帧都被调用，然而它应该每一帧都被调用
 	//然而好像也没关系？
@@ -47,85 +47,104 @@ public class DishAppear : MonoBehaviour
 	public void potatoOnPlate(ButtonControllerType button)
 	{
 		isPressed = button.BUTTON_STATE_IS_PRESSED;
-		PickUpText.text = pickUp.ToString();
-		
-		//决定掉下来的应该是什么蔬菜
-		if (RaycastScript.DishType == 1)
-		{
-			DishName = Potato;
-		}
-		else if (RaycastScript.DishType == 2)
-		{
-			DishName = Garlic;
-		}
-		else if (RaycastScript.DishType == 3)
-		{
-			DishName = Pea;
-		}
-		else if (RaycastScript.DishType == 4)
-		{
-			DishName = Banana;
-		}
-		else if (RaycastScript.DishType == 5)
-		{
-			DishName = Carrot;
-		}
-		else if (RaycastScript.DishType == 6)
-		{
-			DishName = Pumpkin;
-		}
-		else if (RaycastScript.DishType == 7)
-		{
-			DishName = Mushroom;
-		}
-		else if (RaycastScript.DishType == 8)
-		{
-			DishName = Onion;
-		}
-		else if (RaycastScript.DishType == 9)
-		{
-			DishName = Tomato;
-		}
-		
+		dishAppearText.text = "unpressed";
+		if (LastFrameIsPressed != isPressed)
+		{			
+			PickUpText.text = pickUp.ToString();
 
-		
-		
-		
-		if (isPressed)
-		{
-			if (!pickUp)
+			//决定掉下来的应该是什么蔬菜
+			if (RaycastScript.DishType == 1)
 			{
-				dishAppearText.text = "pressed";
-	
-				Vector3 dishPos;
-				dishPos.x = PlayerPlate.transform.position.x;
-				dishPos.y = PlayerPlate.transform.position.y + 0.2f;
-				dishPos.z = PlayerPlate.transform.position.z;
-
-				Instantiate(DishName);
-				pickUp = true;
-				DishName.transform.position = dishPos;
-
+				DishName = Potato;
+			}
+			else if (RaycastScript.DishType == 2)
+			{
+				DishName = Garlic;
+			}
+			else if (RaycastScript.DishType == 3)
+			{
+				DishName = Pea;
+			}
+			else if (RaycastScript.DishType == 4)
+			{
+				DishName = Banana;
+			}
+			else if (RaycastScript.DishType == 5)
+			{
+				DishName = Carrot;
+			}
+			else if (RaycastScript.DishType == 6)
+			{
+				DishName = Pumpkin;
+			}
+			else if (RaycastScript.DishType == 7)
+			{
+				DishName = Mushroom;
+			}
+			else if (RaycastScript.DishType == 8)
+			{
+				DishName = Onion;
+			}
+			else if (RaycastScript.DishType == 9)
+			{
+				DishName = Tomato;
 			}
 
+			dishAppearText.text = button.BUTTON_STATE_IS_PRESSED.ToString();
+
+			Vector3 dishPos;
+			dishPos.x = PlayerPlate.transform.position.x;
+			dishPos.y = PlayerPlate.transform.position.y + 0.2f;
+			dishPos.z = PlayerPlate.transform.position.z;
+
+			Instantiate(DishName);
+			pickUp = true;
+			DishName.transform.position = dishPos;
+
+			/*if (isPressed)
+			{
+				if (!pickUp)
+				{
+					dishAppearText.text = "pressed";
+		
+					Vector3 dishPos;
+					dishPos.x = PlayerPlate.transform.position.x;
+					dishPos.y = PlayerPlate.transform.position.y + 0.2f;
+					dishPos.z = PlayerPlate.transform.position.z;
+	
+					Instantiate(DishName);
+					pickUp = true;
+					DishName.transform.position = dishPos;
+	
+				}
+	
+			}
+			else
+			{
+				dishAppearText.text = "unpressed";
+				pickUp = false;
+	
+			}*/
 		}
-		else
-		{
-			dishAppearText.text = "unpressed";
-			pickUp = false;
-
-		}
-
-
+		LastFrameIsPressed = button.BUTTON_STATE_IS_PRESSED;
 	}
 	
 	public void HamOnPlate(ButtonControllerType button)
 	{
 		
-		isPressed = button.BUTTON_STATE_IS_PRESSED;
+		//isPressed = button.BUTTON_STATE_IS_PRESSED;
 		PickUpText.text = pickUp.ToString();
-		
-		if (isPressed)
+		dishAppearText.text = "pressed";
+
+		Vector3 dishPos;
+		dishPos.x = PlayerPlate.transform.position.x;
+		dishPos.y = PlayerPlate.transform.position.y + 2.0f;
+		dishPos.z = PlayerPlate.transform.position.z;
+
+		Instantiate(DishName);
+		pickUp = true;
+		DishName.transform.position = dishPos;
+		/*if (isPressed)
 		{
 			if (!pickUp)
 			{
@@ -149,7 +168,7 @@ public class DishAppear : MonoBehaviour
 			dishAppearText.text = "unpressed";
 			pickUp = false;
 
-		}
+		}*/
 
 
 	}

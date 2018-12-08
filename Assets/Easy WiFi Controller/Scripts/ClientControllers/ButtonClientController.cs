@@ -17,7 +17,7 @@ namespace EasyWiFi.ClientControls
         //Sprite buttonRegularSprite;
         string buttonKey;
         //Rect screenPixelsRect;
-        int touchCount;
+        int touchCount = 0;
         public bool pressed;
         public Text pressedText;
         //public Text OnOrOff;
@@ -37,17 +37,27 @@ namespace EasyWiFi.ClientControls
         {
             //screenPixelsRect = EasyWiFiUtilities.GetScreenRect(currentImage.rectTransform);
         }
+        public void mapInputToDataStream()
+        {
+            pressedText.text = touchCount.ToString();
+            touchCount++;
+            if (!pressed)
+            {
+                pressed = true;
+                button.BUTTON_STATE_IS_PRESSED = true;
+            }
 
+            if (pressed)
+            {
+                pressed = false;
+                button.BUTTON_STATE_IS_PRESSED = false;
+            }
+
+        }
         //here we grab the input and map it to the data list
-        void Update()
+        /*void Update()
         {
             pressedText.text = pressed.ToString();
-            /*if (pressed)
-            {
-                
-                StartCoroutine(WaitForSeconds());
-            }*/
-
         }
 
         IEnumerator WaitForSeconds()
@@ -64,10 +74,9 @@ namespace EasyWiFi.ClientControls
                 pressed = true;
                 button.BUTTON_STATE_IS_PRESSED = true;
                 StartCoroutine(WaitForSeconds());
-                //OnOrOff.text = "Off";
             }
 
-        }
+        }*/
         /*public void mapInputToDataStream()
         {
 
