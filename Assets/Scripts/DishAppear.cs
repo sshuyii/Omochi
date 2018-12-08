@@ -52,6 +52,7 @@ public class DishAppear : MonoBehaviour
 		{			
 			PickUpText.text = pickUp.ToString();
 
+			
 			//决定掉下来的应该是什么蔬菜
 			if (RaycastScript.DishType == 1)
 			{
