@@ -13,9 +13,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 	public GameObject EasyWifiManager;
 	public Text TextCollision;
 	public int DishType;
-	//int currentNumberControllers = 3;
-	//public string control;
-
+	public int OnPlate;
+	
 	public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player2;
 
 	
@@ -23,7 +22,6 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 	void Start ()
 	{
 		
-
 	}
 	
 
@@ -49,10 +47,11 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 		RaycastHit hit;
 		
 		//if ray casted on potatoes
-		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.5f))
+		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.1f))
 		{	
 			
 			
+		
 			if (hit.collider.CompareTag("Potato"))
 			{
 				
@@ -65,6 +64,7 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				
 			}
+			/*
 			else if (hit.collider.CompareTag("Ham"))
 			{
 				
@@ -74,28 +74,96 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 
 				
 				//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward)*100, Color.green);
+			}
+			*/
+			
+			//如果碰到pea
+			else if (hit.collider.CompareTag("Pea"))
+			{
 				
+				DishType = 3;
+				TextCollision.text = "Pea =" + DishType;
 				
 			}
+			//如果碰到Banana
+			else if (hit.collider.CompareTag("Banana"))
+			{
+				
+				DishType = 4;
+				TextCollision.text = "Banana =" + DishType;
+				
+			}
+			//如果碰到Carrot
+			else if (hit.collider.CompareTag("Carrot"))
+			{
+				
+				DishType = 5;
+				TextCollision.text = "Carrot =" + DishType;
+				
+			}
+			//如果碰到Pumpkin
+			else if (hit.collider.CompareTag("Pumpkin"))
+			{
+				
+				DishType = 6;
+				TextCollision.text = "Pumpkin =" + DishType;
+				
+			}
+			//如果碰到Mushroom
+			else if (hit.collider.CompareTag("Mushroom"))
+			{
+				
+				DishType = 7;
+				TextCollision.text = "Mushroom =" + DishType;
+				
+			}
+			//如果碰到Onion
+			else if (hit.collider.CompareTag("Onion"))
+			{
+				
+				DishType = 8;
+				TextCollision.text = "Onion =" + DishType;
+				
+			}
+			//如果碰到Tomato
+			else if (hit.collider.CompareTag("Tomato"))
+			{
+				
+				DishType = 9;
+				TextCollision.text = "Tomato =" + DishType;
+				
+			}
+			//如果碰到Garlic
+			else if (hit.collider.CompareTag("Garlic"))
+			{
+				
+				DishType = 2;
+				TextCollision.text = "Garlic =" + DishType;
+				
+			}
+			
 			else
 			{
 				DishType = 0;
 				TextCollision.text = "Potatoes1 =" + DishType;
 				//intBackchannel.setValue(DishType);//决定向手机传输什么变量INT
-
 			}
 			
+			
 			//看EasyWifiManager里的ServerBackchannel到底贴的是哪个player的标签
+			//用来代替了下面几行需要列举的代码
 			for(int i = 0; i < 3; i++)
 			{
 				if (array[i].player == player)
 				{
-					array[i].setValue(DishType); //决定向手机传输什么变量INT
+					array[i].setValue(DishType*10 + OnPlate); //决定向手机传输什么变量INT
 				}
 			}
 			
 			
+			
 			//用if函数判断碰撞的标签是否和传输数据脚本的标签相同
+			//现在用for loop代替了，能少些几行代码
 			/*if (script1.player == player)
 			{
 					

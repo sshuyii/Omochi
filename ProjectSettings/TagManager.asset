@@ -12,6 +12,15 @@ TagManager:
   - Ham
   - Ignored
   - PlateTrigger
+  - Onion
+  - Carrot
+  - Pea
+  - Banana
+  - Pumpkin
+  - Tamato
+  - Garlic
+  - Mushroom
+  - Tomato
   layers:
   - Default
   - TransparentFX

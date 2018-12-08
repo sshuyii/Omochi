@@ -15,6 +15,17 @@ public class DishAppear : MonoBehaviour
 	public bool pickUp;
 	public Text PickUpText;
 	
+	public GameObject Potato;
+	public GameObject Pea;
+	public GameObject Banana;
+	public GameObject Carrot;
+	public GameObject Pumpkin;
+	public GameObject Mushroom;
+	public GameObject Onion;
+	public GameObject Tomato;
+	public GameObject Garlic;
+
+	public RaycastingControllerFromPlate RaycastScript;
 	//此脚本中自定义的potatoOnPlate函数并没有每一帧都被调用，然而它应该每一帧都被调用
 	//然而好像也没关系？
 		
@@ -28,14 +39,57 @@ public class DishAppear : MonoBehaviour
 	void Update()
 	{
 		//PickUpText.text = pickUp.ToString();
+		
+
 
 	}
-
+	//如果按钮被按下，那么盘子上方出现一个potato
 	public void potatoOnPlate(ButtonControllerType button)
 	{
-		
 		isPressed = button.BUTTON_STATE_IS_PRESSED;
 		PickUpText.text = pickUp.ToString();
+		
+		//决定掉下来的应该是什么蔬菜
+		if (RaycastScript.DishType == 1)
+		{
+			DishName = Potato;
+		}
+		else if (RaycastScript.DishType == 2)
+		{
+			DishName = Garlic;
+		}
+		else if (RaycastScript.DishType == 3)
+		{
+			DishName = Pea;
+		}
+		else if (RaycastScript.DishType == 4)
+		{
+			DishName = Banana;
+		}
+		else if (RaycastScript.DishType == 5)
+		{
+			DishName = Carrot;
+		}
+		else if (RaycastScript.DishType == 6)
+		{
+			DishName = Pumpkin;
+		}
+		else if (RaycastScript.DishType == 7)
+		{
+			DishName = Mushroom;
+		}
+		else if (RaycastScript.DishType == 8)
+		{
+			DishName = Onion;
+		}
+		else if (RaycastScript.DishType == 9)
+		{
+			DishName = Tomato;
+		}
+		
+
+		
+		
 		
 		if (isPressed)
 		{

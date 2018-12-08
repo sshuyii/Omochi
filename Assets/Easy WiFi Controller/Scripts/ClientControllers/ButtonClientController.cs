@@ -20,7 +20,7 @@ namespace EasyWiFi.ClientControls
         int touchCount;
         public bool pressed;
         public Text pressedText;
-        public Text OnOrOff;
+        //public Text OnOrOff;
         
         // Use this for initialization
         void Awake()
@@ -31,6 +31,7 @@ namespace EasyWiFi.ClientControls
             //buttonRegularSprite = currentImage.sprite;
             
         }
+        
 
         void Start()
         {
@@ -41,31 +42,31 @@ namespace EasyWiFi.ClientControls
         void Update()
         {
             pressedText.text = pressed.ToString();
-            if (pressed)
+            /*if (pressed)
             {
-                button.BUTTON_STATE_IS_PRESSED = true;            
-            }
-            else
-            {
-                button.BUTTON_STATE_IS_PRESSED = false;
-            }
+                
+                StartCoroutine(WaitForSeconds());
+            }*/
 
+        }
+
+        IEnumerator WaitForSeconds()
+        {
+            yield return new WaitForSeconds(0.2f);
+            pressed = false;
+            button.BUTTON_STATE_IS_PRESSED = false;
         }
 
         public void mapInputToDataStream()
         {
-            if (pressed)
-            {
-                pressed = false;
-                OnOrOff.text = "Off";
-            }
-
-            else
+            if (!pressed)
             {
                 pressed = true;
-                OnOrOff.text = "On";
-
+                button.BUTTON_STATE_IS_PRESSED = true;
+                StartCoroutine(WaitForSeconds());
+                //OnOrOff.text = "Off";
             }
+
         }
         /*public void mapInputToDataStream()
         {

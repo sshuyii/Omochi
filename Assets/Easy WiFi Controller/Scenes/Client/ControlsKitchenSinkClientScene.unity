@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueText: {fileID: 3869604}
   PotatoSwitch: {fileID: 1399990242}
-  HamSwitch: {fileID: 1445348022}
+  DishTypePhone: 0
 --- !u!114 &24534875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,81 +324,6 @@ MonoBehaviour:
     type: 3}
   fastestPressRate: 1
   OnOrOff: {fileID: 0}
---- !u!1 &197776379
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 197776380}
-  - component: {fileID: 197776382}
-  - component: {fileID: 197776381}
-  m_Layer: 0
-  m_Name: OnOrOff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &197776380
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 197776379}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1399990243}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &197776381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 197776379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Off
---- !u!222 &197776382
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 197776379}
-  m_CullTransparentMesh: 0
 --- !u!1 &288141191
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +444,7 @@ RectTransform:
   - {fileID: 372606904}
   - {fileID: 1221108935}
   - {fileID: 611645390}
+  - {fileID: 1361491660}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -741,11 +667,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlName: TouchpadRight
---- !u!4 &478281300 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627,
-    type: 2}
-  m_PrefabInternal: {fileID: 1908818095}
 --- !u!1 &497380270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1191,6 @@ MonoBehaviour:
     type: 3}
   pressed: 0
   pressedText: {fileID: 0}
-  OnOrOff: {fileID: 0}
 --- !u!224 &868308797
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1615,7 +1535,6 @@ RectTransform:
   - {fileID: 24534873}
   - {fileID: 1399990243}
   - {fileID: 1445348023}
-  - {fileID: 478281300}
   m_Father: {fileID: 360893007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1818,6 +1737,81 @@ MonoBehaviour:
   controlName: Slider1
   orientation: 0
   sliderImageForeground: {fileID: 1020297220}
+--- !u!1 &1361491659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1361491660}
+  - component: {fileID: 1361491662}
+  - component: {fileID: 1361491661}
+  m_Layer: 0
+  m_Name: dishName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1361491660
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1361491659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 360893007}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -72, y: -75.678986}
+  m_SizeDelta: {x: 160, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1361491661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1361491659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 32
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: dishName
+--- !u!222 &1361491662
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1361491659}
+  m_CullTransparentMesh: 0
 --- !u!1 &1399990242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1399990243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1847,9 +1841,8 @@ RectTransform:
   m_GameObject: {fileID: 1399990242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999956, y: 0.9999956, z: 0.9999956}
-  m_Children:
-  - {fileID: 197776380}
+  m_LocalScale: {x: 2.28, y: 0.9999956, z: 0.9999956}
+  m_Children: []
   m_Father: {fileID: 1217711026}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1877,7 +1870,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0c9ddb6d34d760646a3325d9e4e26139, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45680998936c5401eaa8f9408ae136f4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1920,11 +1913,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlName: PotatoPlayer1
-  buttonPressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2,
+  buttonPressedSprite: {fileID: 21300000, guid: 45680998936c5401eaa8f9408ae136f4,
     type: 3}
   pressed: 0
   pressedText: {fileID: 611645391}
-  OnOrOff: {fileID: 197776381}
 --- !u!114 &1399990248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,10 +1929,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 1399990242}
-  Dish: {fileID: 1606935943879702, guid: e659a8ff27b9e4862b37f5ce8a0541c6, type: 2}
+  PotatoSwitchControl: {fileID: 24534874}
+  Potato: {fileID: 1606935943879702, guid: e659a8ff27b9e4862b37f5ce8a0541c6, type: 2}
+  Pea: {fileID: 1014570506380256, guid: c993523609c5e4826bd725c6440f34dc, type: 2}
+  Banana: {fileID: 1143761953899448, guid: fe453eb2b9b724d4895e4f442e1d5d67, type: 2}
+  Carrot: {fileID: 1974794789023378, guid: 37a7c0904ac134e6cbdeaa78aad0ef8c, type: 2}
+  Pumpkin: {fileID: 1753950706299240, guid: a8acd54d829a748deb3d8f2c69dd546c, type: 2}
+  Mushroom: {fileID: 1125876880542286, guid: 76bd0e29f9893462294290290961ed89, type: 2}
+  Onion: {fileID: 1137263807745736, guid: 4808a90c5aafa4e149b5a88301a7f7e5, type: 2}
+  Tomato: {fileID: 1623645656879314, guid: 391a1b0c8a9674ec4a082f7afbe47034, type: 2}
+  Garlic: {fileID: 1662037804854680, guid: 89b9eab2795754409ab15944e784e7e3, type: 2}
   PotatoText: {fileID: 1221108936}
   AlreadyAppeared: 0
   clientControlPanel: {fileID: 1217711025}
+  ScreenValue: {fileID: 1361491661}
 --- !u!114 &1399990249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1967,10 +1969,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 0c9ddb6d34d760646a3325d9e4e26139,
-      type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 6ccae0bd8a847c74a88dfffad9cccef2, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 0c9ddb6d34d760646a3325d9e4e26139, type: 3}
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 45680998936c5401eaa8f9408ae136f4, type: 3}
+    m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2014,7 +2015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1445348023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2046,10 +2047,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 1445348022}
-  Dish: {fileID: 1382300803719012, guid: 9d9e52ea42c624bbcb38d78fe3709b56, type: 2}
+  PotatoSwitchControl: {fileID: 0}
+  Potato: {fileID: 1382300803719012, guid: 9d9e52ea42c624bbcb38d78fe3709b56, type: 2}
+  Pea: {fileID: 0}
+  Banana: {fileID: 0}
+  Carrot: {fileID: 0}
+  Pumpkin: {fileID: 0}
+  Mushroom: {fileID: 0}
+  Onion: {fileID: 0}
+  Tomato: {fileID: 0}
+  Garlic: {fileID: 0}
   PotatoText: {fileID: 1221108936}
   AlreadyAppeared: 0
   clientControlPanel: {fileID: 1217711025}
+  ScreenValue: {fileID: 0}
 --- !u!114 &1445348025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2066,7 +2077,6 @@ MonoBehaviour:
     type: 3}
   pressed: 0
   pressedText: {fileID: 611645391}
-  OnOrOff: {fileID: 683242505}
 --- !u!114 &1445348026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2440,48 +2450,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1908818095
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1217711026}
-    m_Modifications:
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 164.17583
-      objectReference: {fileID: 0}
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -207.6923
-      objectReference: {fileID: 0}
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4761631021078344, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cb07f443f55cc463f88d97cb1e938627, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1925944785
 GameObject:
   m_ObjectHideFlags: 0

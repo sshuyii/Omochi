@@ -25,7 +25,7 @@ namespace EasyWiFi.ClientControls
         int touchCount;
         bool pressed;
         bool momentartyLock;
-        public Text OnOrOff;
+        //public Text OnOrOff;
         
 
         // Use this for initialization
@@ -44,18 +44,22 @@ namespace EasyWiFi.ClientControls
         }
 
         //here we grab the input and map it to the data list
-        void Update()
+        /*void Update()
         {           
             if (pressed)
             {
-                button.BUTTON_STATE_IS_PRESSED = true;            
+                button.BUTTON_STATE_IS_PRESSED = true;
+                StartCoroutine(WaitForSeconds());
             }
-            else
-            {
-                button.BUTTON_STATE_IS_PRESSED = false;
-            }
+          
         }
 
+        IEnumerator WaitForSeconds()
+        {
+            yield return new WaitForSeconds(0.2f);
+            button.BUTTON_STATE_IS_PRESSED = false;
+        }
+        
         void resetLock()
         {
             //momentartyLock = false;
@@ -69,17 +73,45 @@ namespace EasyWiFi.ClientControls
             if (pressed)
             {
                 pressed = false;
-                OnOrOff.text = "Off";
+                //OnOrOff.text = "Off";
             }
 
             else
             {
                 pressed = true;
-                OnOrOff.text = "On";
+                //OnOrOff.text = "On";
 
+            }*/
+
+        void Update()
+        {
+            //pressedText.text = pressed.ToString();
+            /*if (pressed)
+            {
+                
+                StartCoroutine(WaitForSeconds());
+            }*/
+
+        }
+
+        IEnumerator WaitForSeconds()
+        {
+            yield return new WaitForSeconds(0.2f);
+            pressed = false;
+            button.BUTTON_STATE_IS_PRESSED = false;
+        }
+
+        public void mapInputToDataStream()
+        {
+            if (!pressed)
+            {
+                pressed = true;
+                button.BUTTON_STATE_IS_PRESSED = true;
+                StartCoroutine(WaitForSeconds());
+                //OnOrOff.text = "Off";
             }
 
-
+        }
 
 
 
