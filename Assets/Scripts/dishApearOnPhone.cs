@@ -46,7 +46,7 @@ public class dishApearOnPhone : MonoBehaviour
 		if (self.GetComponent<ButtonClientController>().pressed && !AlreadyAppeared)
 		{
 			PotatoText.text = "Pressed";
-			
+			dishName = Potato;
 			
 			//决定到底要在手机上显示哪个菜的图片
 			if (dishNumber == 1)

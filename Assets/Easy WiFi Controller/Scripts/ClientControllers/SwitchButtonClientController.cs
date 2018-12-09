@@ -25,8 +25,7 @@ namespace EasyWiFi.ClientControls
         int touchCount;
         bool pressed;
         bool momentartyLock;
-        //public Text OnOrOff;
-        
+
 
         // Use this for initialization
         void Awake()
@@ -120,8 +119,7 @@ namespace EasyWiFi.ClientControls
                 pressed = true;
                 button.BUTTON_STATE_IS_PRESSED = true;
             }
-
-            if (pressed)
+            else
             {
                 pressed = false;
                 button.BUTTON_STATE_IS_PRESSED = false;

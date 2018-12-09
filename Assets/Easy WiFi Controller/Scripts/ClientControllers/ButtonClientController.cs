@@ -20,7 +20,6 @@ namespace EasyWiFi.ClientControls
         int touchCount = 0;
         public bool pressed;
         public Text pressedText;
-        //public Text OnOrOff;
         
         // Use this for initialization
         void Awake()
@@ -40,27 +39,30 @@ namespace EasyWiFi.ClientControls
         public void mapInputToDataStream()
         {
             pressedText.text = touchCount.ToString();
-            touchCount++;
             if (!pressed)
             {
                 pressed = true;
-                button.BUTTON_STATE_IS_PRESSED = true;
             }
-
-            if (pressed)
+            else
             {
                 pressed = false;
-                button.BUTTON_STATE_IS_PRESSED = false;
             }
 
         }
         //here we grab the input and map it to the data list
-        /*void Update()
+        void Update()
         {
-            pressedText.text = pressed.ToString();
+            if (pressed)
+            {
+                button.BUTTON_STATE_IS_PRESSED = true;            
+            }
+            else
+            {
+                button.BUTTON_STATE_IS_PRESSED = false;
+            }
         }
 
-        IEnumerator WaitForSeconds()
+        /*IEnumerator WaitForSeconds()
         {
             yield return new WaitForSeconds(0.2f);
             pressed = false;

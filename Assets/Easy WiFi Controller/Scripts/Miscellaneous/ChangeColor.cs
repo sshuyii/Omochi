@@ -30,7 +30,6 @@ public class ChangeColor : MonoBehaviour {
             if ((GyroServer.isStartAverage == false) && (GyroServer.isEndAverage == false))
             {
                 GyroServer.GetComponent<MatchOrientationGyroServerController>().StartCalculatePosition();
-                print("READY");
             }
         }
         else

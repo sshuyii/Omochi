@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Easy WiFi Controller/Scenes/Server/ControlsKitchenSinkServerScene.unity
     guid: d2860a8d87c953549967b88b62bb99a3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Easy WiFi Controller/Scenes/Client/ControlsKitchenSinkClientScene.unity
     guid: c9f788cd1ed835b41b6d811f282cecd4
   - enabled: 0

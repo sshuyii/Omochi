@@ -50,13 +50,13 @@ public class PotatoSwitchControl : MonoBehaviour
 		//if none of vegetables nor meat
 		if(intBackchannel.INT_VALUE == 0)
 		{
-			PotatoSwitch.SetActive(false);
+			PotatoSwitch.GetComponent<Image>().enabled = false;
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
 
 		}
 		else
 		{
-			PotatoSwitch.SetActive(true);
+			PotatoSwitch.GetComponent<Image>().enabled = true;
 			ValueText.text = intBackchannel.INT_VALUE.ToString();
 		}
 		//把传输过来的值记录在一个public函数里
