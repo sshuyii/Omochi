@@ -791,6 +791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1125876880542286, guid: 76bd0e29f9893462294290290961ed89, type: 2}
   player: 0
@@ -883,6 +884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1308213454134854, guid: 40aa05c7dcb2341d19684200b4ff8d28, type: 2}
   player: 1
@@ -980,7 +982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!143 &95835180
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1009,8 +1011,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fe25c3b3fc9f8448c5930a98d877d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodOnPlate: []
   speed: 10
   player: 3
+  forceRatio: 30
+  radiusForce: 1
   radius: 0.4
 --- !u!114 &95835182
 MonoBehaviour:
@@ -1713,7 +1718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!143 &204000943
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1742,8 +1747,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fe25c3b3fc9f8448c5930a98d877d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodOnPlate: []
   speed: 10
   player: 1
+  forceRatio: 30
+  radiusForce: 1
   radius: 0.4
 --- !u!114 &204000945
 MonoBehaviour:
@@ -1904,6 +1912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 1913937057}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1308213454134854, guid: 40aa05c7dcb2341d19684200b4ff8d28, type: 2}
   player: 0
@@ -3078,7 +3087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &334943067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,6 +3322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1974794789023378, guid: 37a7c0904ac134e6cbdeaa78aad0ef8c, type: 2}
   player: 0
@@ -3614,7 +3624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
-  PlayerPlate: {fileID: 1922063644}
+  playerMove: {fileID: 0}
+  PlayerPlate: {fileID: 0}
   DishName: {fileID: 1548550836735574, guid: 2a4935cadf27d4efda4b8b505f8bcc03, type: 2}
   player: 0
   pickUp: 0
@@ -3656,6 +3667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 2051234131}
   DishName: {fileID: 1548550836735574, guid: 2a4935cadf27d4efda4b8b505f8bcc03, type: 2}
   player: 3
@@ -3698,6 +3710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 2073036655}
   DishName: {fileID: 1548550836735574, guid: 2a4935cadf27d4efda4b8b505f8bcc03, type: 2}
   player: 2
@@ -3740,6 +3753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 354228951}
   DishName: {fileID: 1548550836735574, guid: 2a4935cadf27d4efda4b8b505f8bcc03, type: 2}
   player: 1
@@ -3770,61 +3784,6 @@ MonoBehaviour:
   player: 1
   notifyMethod: HamOnPlate
   callType: 0
---- !u!1001 &367713935
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1663168548}
-    m_Modifications:
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 64919993635039020, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-        type: 2}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925077070867588, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_Name
-      value: plate1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925077070867588, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &381995900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5753,6 +5712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1137263807745736, guid: 4808a90c5aafa4e149b5a88301a7f7e5, type: 2}
   player: 0
@@ -7360,6 +7320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1753950706299240, guid: a8acd54d829a748deb3d8f2c69dd546c, type: 2}
   player: 0
@@ -8234,6 +8195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1308213454134854, guid: 40aa05c7dcb2341d19684200b4ff8d28, type: 2}
   player: 2
@@ -9359,6 +9321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1662037804854680, guid: 89b9eab2795754409ab15944e784e7e3, type: 2}
   player: 0
@@ -9481,6 +9444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1308213454134854, guid: 40aa05c7dcb2341d19684200b4ff8d28, type: 2}
   player: 3
@@ -9892,7 +9856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1109539071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10272,7 +10236,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1144735508}
-  m_LocalRotation: {x: -3.2185894e-16, y: 1, z: -0.000000021855694, w: -0.000000011924883}
+  m_LocalRotation: {x: -3.255911e-16, y: 1, z: -0.000000022109123, w: -0.000000012063159}
   m_LocalPosition: {x: 4.139, y: -2.627, z: -3.3519597}
   m_LocalScale: {x: 0.38468, y: 0.38468, z: 0.38468}
   m_Children: []
@@ -10333,7 +10297,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -10696,6 +10660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1623645656879314, guid: 391a1b0c8a9674ec4a082f7afbe47034, type: 2}
   player: 0
@@ -11158,19 +11123,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_LocalScale.x
-      value: 5.266418
+      value: 2.8381298
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_LocalScale.y
-      value: 94.50007
+      value: 1.9651299
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_LocalScale.z
-      value: 8.69413
+      value: 2.8381202
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_Name
@@ -11195,7 +11160,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1233954496}
-  m_Material: {fileID: 13400000, guid: 1c577e50efa4f6341a513b419e817a8b, type: 2}
+  m_Material: {fileID: 13400000, guid: d72f81a7d3b56470c97a0980c4a4eb70, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13201,6 +13166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 354228951}
   DishName: {fileID: 1548550836735574, guid: 2a4935cadf27d4efda4b8b505f8bcc03, type: 2}
   player: 1
@@ -14374,10 +14340,8 @@ Transform:
   m_GameObject: {fileID: 1663168547}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.04952109}
-  m_LocalScale: {x: 0.53891087, y: 0.02079501, z: 0.32644096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1922063645}
-  - {fileID: 1754175846}
   - {fileID: 1233954495}
   m_Father: {fileID: 1913937049}
   m_RootOrder: 3
@@ -15364,7 +15328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1738321890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15523,112 +15487,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1752747414}
   m_Mesh: {fileID: 4300000, guid: dc898d7128c93c34b8a99b201a7532d0, type: 3}
---- !u!1001 &1754175845
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1663168548}
-    m_Modifications:
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 11.206249
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 18.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 29.04157
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925077070867588, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_Name
-      value: plateTrigger1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23125597277039622, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 64919993635039020, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-        type: 2}
-      propertyPath: m_CookingOptions
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 64919993635039020, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-        type: 2}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925077070867588, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_TagString
-      value: PlateTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925077070867588, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 64919993635039020, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-  m_SourcePrefab: {fileID: 100100000, guid: 1b0c731ae41514d2699c56b8c7ca7754, type: 2}
-  m_IsPrefabAsset: 0
---- !u!4 &1754175846 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-    type: 2}
-  m_PrefabInternal: {fileID: 1754175845}
---- !u!1 &1754175847 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1925077070867588, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-    type: 2}
-  m_PrefabInternal: {fileID: 1754175845}
---- !u!64 &1754175848
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1754175847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: cab5aabc783824c2796d6ab0b2860f59, type: 3}
 --- !u!1 &1759721654
 GameObject:
   m_ObjectHideFlags: 0
@@ -16562,7 +16420,6 @@ GameObject:
   - component: {fileID: 1913937053}
   - component: {fileID: 1913937051}
   - component: {fileID: 1913937050}
-  - component: {fileID: 1913937055}
   - component: {fileID: 1913937056}
   - component: {fileID: 1913937054}
   - component: {fileID: 1913937057}
@@ -16684,20 +16541,6 @@ MonoBehaviour:
   sensitivity: 0.2
   touchMoveYRight: 0
   printText: {fileID: 1703009904}
---- !u!114 &1913937055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1913937048}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96d9daea9fe0d4af4a0b6965f5d10467, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Left: {fileID: 1271780644}
-  Right: {fileID: 8290831}
-  PlateRef: {fileID: 757445463}
 --- !u!114 &1913937056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16728,9 +16571,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fe25c3b3fc9f8448c5930a98d877d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodOnPlate: []
   speed: 10
   player: 0
-  radius: 0.3
+  forceRatio: 3.55
+  radiusForce: 1e-10
+  radius: 0.2
 --- !u!4 &1915553202
 Transform:
   m_ObjectHideFlags: 0
@@ -16929,16 +16775,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1918128139}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1922063644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1925077070867588, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-    type: 2}
-  m_PrefabInternal: {fileID: 367713935}
---- !u!4 &1922063645 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4020513108536040, guid: 1b0c731ae41514d2699c56b8c7ca7754,
-    type: 2}
-  m_PrefabInternal: {fileID: 367713935}
 --- !u!1 &1931527424
 GameObject:
   m_ObjectHideFlags: 0
@@ -16986,6 +16822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1143761953899448, guid: fe453eb2b9b724d4895e4f442e1d5d67, type: 2}
   player: 0
@@ -18088,6 +17925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dishAppearText: {fileID: 433065888}
+  playerMove: {fileID: 0}
   PlayerPlate: {fileID: 1233954496}
   DishName: {fileID: 1014570506380256, guid: c993523609c5e4826bd725c6440f34dc, type: 2}
   player: 0
@@ -18468,7 +18306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!143 &2093645145
 CharacterController:
   m_ObjectHideFlags: 0
@@ -18497,8 +18335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fe25c3b3fc9f8448c5930a98d877d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodOnPlate: []
   speed: 10
   player: 2
+  forceRatio: 30
+  radiusForce: 1
   radius: 0.4
 --- !u!114 &2093645147
 MonoBehaviour:

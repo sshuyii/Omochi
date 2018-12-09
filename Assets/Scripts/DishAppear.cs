@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class DishAppear : MonoBehaviour
 {
 	public Text dishAppearText;
+	public PlayerMove playerMove;
 	public GameObject PlayerPlate;
 	[FormerlySerializedAs("potato")] public GameObject DishName;
 	bool isPressed;
@@ -46,17 +47,15 @@ public class DishAppear : MonoBehaviour
 	//如果按钮被按下，那么盘子上方出现一个potato
 	public void potatoOnPlate(ButtonControllerType button)
 	{
-		print("potatoOnPlate");
 		isPressed = button.BUTTON_STATE_IS_PRESSED;
 		dishAppearText.text = "unpressed";
 		if (LastFrameIsPressed != isPressed)
 		{	
-			print("pressedChange");
 			PickUpText.text = pickUp.ToString();
 
 			
 			//决定掉下来的应该是什么蔬菜
-			/*if (RaycastScript.DishType == 1)
+			if (RaycastScript.DishType == 1)
 			{
 				DishName = Potato;
 			}
@@ -91,16 +90,17 @@ public class DishAppear : MonoBehaviour
 			else if (RaycastScript.DishType == 9)
 			{
 				DishName = Tomato;
-			}*/
+			}
 
 			dishAppearText.text = button.BUTTON_STATE_IS_PRESSED.ToString();
-
+			
 			Vector3 dishPos;
 			dishPos.x = PlayerPlate.transform.position.x;
 			dishPos.y = PlayerPlate.transform.position.y + 0.2f;
 			dishPos.z = PlayerPlate.transform.position.z;
 
-			Instantiate(DishName);
+			
+			playerMove.AddFoodList(Instantiate(DishName));
 			pickUp = true;
 			DishName.transform.position = dishPos;
 
