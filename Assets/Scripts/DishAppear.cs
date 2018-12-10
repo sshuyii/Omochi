@@ -132,48 +132,7 @@ public class DishAppear : MonoBehaviour
 		LastFrameIsPressed = button.BUTTON_STATE_IS_PRESSED;
 	}
 	
-	public void HamOnPlate(ButtonControllerType button)
-	{
-		
-		//isPressed = button.BUTTON_STATE_IS_PRESSED;
-		PickUpText.text = pickUp.ToString();
-		dishAppearText.text = "pressed";
-
-		Vector3 dishPos;
-		dishPos.x = PlayerPlate.transform.position.x;
-		dishPos.y = PlayerPlate.transform.position.y + 2.0f;
-		dishPos.z = PlayerPlate.transform.position.z;
-
-		Instantiate(DishName);
-		pickUp = true;
-		DishName.transform.position = dishPos;
-		/*if (isPressed)
-		{
-			if (!pickUp)
-			{
-				dishAppearText.text = "pressed";
-
-				Vector3 dishPos;
-				dishPos.x = PlayerPlate.transform.position.x;
-				dishPos.y = PlayerPlate.transform.position.y + 2.0f;
-				dishPos.z = PlayerPlate.transform.position.z;
-
-				Instantiate(DishName);
-				pickUp = true;
-				DishName.transform.position = dishPos;
-			}
-
-
-
-		}
-		else
-		{
-			dishAppearText.text = "unpressed";
-			pickUp = false;
-
-		}*/
-
-
-	}
+	
+	
 	
 }

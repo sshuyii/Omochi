@@ -744,6 +744,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AddForce.cs" t="Include" />
           <e p="dishApearOnPhone.cs" t="Include" />
           <e p="DishAppear.cs" t="Include" />
           <e p="IntServerBackchannelDishes.cs" t="Include" />
@@ -753,6 +754,7 @@
           <e p="PotatoesCollider.cs" t="Include" />
           <e p="PotatoSwitchControl.cs" t="Include" />
           <e p="RaycastingControllerFromPlate.cs" t="Include" />
+          <e p="ScoreController.cs" t="Include" />
         </e>
         <e p="WebPlayerTemplates" t="Include">
           <e p="HappyFunTimes" t="Include">

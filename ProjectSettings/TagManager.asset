@@ -21,6 +21,15 @@ TagManager:
   - Garlic
   - Mushroom
   - Tomato
+  - BananaT
+  - PotatoT
+  - OnionT
+  - CarrotT
+  - PeaT
+  - PumpkinT
+  - TamatoT
+  - GarlicT
+  - MushroomT
   layers:
   - Default
   - TransparentFX

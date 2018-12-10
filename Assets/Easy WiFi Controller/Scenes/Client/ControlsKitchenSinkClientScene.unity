@@ -1190,7 +1190,6 @@ MonoBehaviour:
     type: 3}
   pressed: 0
   pressedText: {fileID: 0}
-  OnOrOff: {fileID: 0}
 --- !u!224 &868308797
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1906,7 +1905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1399990243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1991,7 +1990,6 @@ MonoBehaviour:
     type: 3}
   pressed: 0
   pressedText: {fileID: 611645391}
-  OnOrOff: {fileID: 1367940142}
 --- !u!114 &1399990248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,7 +2150,6 @@ MonoBehaviour:
     type: 3}
   pressed: 0
   pressedText: {fileID: 611645391}
-  OnOrOff: {fileID: 0}
 --- !u!114 &1445348026
 MonoBehaviour:
   m_ObjectHideFlags: 0
