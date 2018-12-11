@@ -9949,6 +9949,24 @@ MonoBehaviour:
   TextCollision: {fileID: 993599330}
   DishType: 0
   OnPlate: 0
+  PeaText: {fileID: 0}
+  BananaText: {fileID: 0}
+  CarrotText: {fileID: 0}
+  PumpkinText: {fileID: 0}
+  PotatoText: {fileID: 1151969724064280, guid: c49a3faf0c057497db07d66356bbcef9, type: 2}
+  MushroomText: {fileID: 0}
+  OnionText: {fileID: 0}
+  TomatoText: {fileID: 1151969724064280, guid: c49a3faf0c057497db07d66356bbcef9, type: 2}
+  GarlicText: {fileID: 0}
+  ShrimpText: {fileID: 0}
+  MeatballText: {fileID: 0}
+  SausageText: {fileID: 0}
+  ChickenText: {fileID: 0}
+  SteakText: {fileID: 0}
+  CrayfishText: {fileID: 0}
+  BaconText: {fileID: 0}
+  CrabText: {fileID: 0}
+  TempuraText: {fileID: 0}
   player: 0
 --- !u!65 &898199676
 BoxCollider:
@@ -13753,6 +13771,24 @@ MonoBehaviour:
   TextCollision: {fileID: 711424844}
   DishType: 0
   OnPlate: 0
+  PeaText: {fileID: 0}
+  BananaText: {fileID: 0}
+  CarrotText: {fileID: 0}
+  PumpkinText: {fileID: 0}
+  PotatoText: {fileID: 0}
+  MushroomText: {fileID: 0}
+  OnionText: {fileID: 0}
+  TomatoText: {fileID: 0}
+  GarlicText: {fileID: 0}
+  ShrimpText: {fileID: 0}
+  MeatballText: {fileID: 0}
+  SausageText: {fileID: 0}
+  ChickenText: {fileID: 0}
+  SteakText: {fileID: 0}
+  CrayfishText: {fileID: 0}
+  BaconText: {fileID: 0}
+  CrabText: {fileID: 0}
+  TempuraText: {fileID: 0}
   player: 1
 --- !u!4 &1232179589
 Transform:
@@ -15118,6 +15154,24 @@ MonoBehaviour:
   TextCollision: {fileID: 1998467844}
   DishType: 0
   OnPlate: 0
+  PeaText: {fileID: 0}
+  BananaText: {fileID: 0}
+  CarrotText: {fileID: 0}
+  PumpkinText: {fileID: 0}
+  PotatoText: {fileID: 0}
+  MushroomText: {fileID: 0}
+  OnionText: {fileID: 0}
+  TomatoText: {fileID: 0}
+  GarlicText: {fileID: 0}
+  ShrimpText: {fileID: 0}
+  MeatballText: {fileID: 0}
+  SausageText: {fileID: 0}
+  ChickenText: {fileID: 0}
+  SteakText: {fileID: 0}
+  CrayfishText: {fileID: 0}
+  BaconText: {fileID: 0}
+  CrabText: {fileID: 0}
+  TempuraText: {fileID: 0}
   player: 1
 --- !u!1 &1338572140
 GameObject:
@@ -17235,6 +17289,96 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1535117532}
   m_Mesh: {fileID: 4300000, guid: 8ae8faf07ac912643bcf8a162a6d03ae, type: 3}
+--- !u!1 &1535470130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1151969724064280, guid: c49a3faf0c057497db07d66356bbcef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535470131}
+  - component: {fileID: 1535470134}
+  - component: {fileID: 1535470133}
+  - component: {fileID: 1535470132}
+  m_Layer: 0
+  m_Name: TamatoText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535470131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4693255758108918, guid: c49a3faf0c057497db07d66356bbcef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535470130}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.61, y: -4.02, z: 1.57}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 1639127445}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1535470132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65867377420240776, guid: c49a3faf0c057497db07d66356bbcef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535470130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1535470133
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 23278835087046896, guid: c49a3faf0c057497db07d66356bbcef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535470130}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1535470134
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 33620448639416742, guid: c49a3faf0c057497db07d66356bbcef9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535470130}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1546631683
 Prefab:
   m_ObjectHideFlags: 0
@@ -17962,6 +18106,35 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!1 &1639127444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1639127445}
+  m_Layer: 0
+  m_Name: PopUpText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1639127445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1639127444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.65150356, y: 5.6689224, z: -1.4706411}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1535470131}
+  m_Father: {fileID: 0}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639755893
 GameObject:
   m_ObjectHideFlags: 0
@@ -18434,6 +18607,24 @@ MonoBehaviour:
   TextCollision: {fileID: 993599330}
   DishType: 0
   OnPlate: 0
+  PeaText: {fileID: 0}
+  BananaText: {fileID: 0}
+  CarrotText: {fileID: 0}
+  PumpkinText: {fileID: 0}
+  PotatoText: {fileID: 0}
+  MushroomText: {fileID: 0}
+  OnionText: {fileID: 0}
+  TomatoText: {fileID: 0}
+  GarlicText: {fileID: 0}
+  ShrimpText: {fileID: 0}
+  MeatballText: {fileID: 0}
+  SausageText: {fileID: 0}
+  ChickenText: {fileID: 0}
+  SteakText: {fileID: 0}
+  CrayfishText: {fileID: 0}
+  BaconText: {fileID: 0}
+  CrabText: {fileID: 0}
+  TempuraText: {fileID: 0}
   player: 0
 --- !u!1 &1664841118
 GameObject:
@@ -19738,6 +19929,24 @@ MonoBehaviour:
   TextCollision: {fileID: 2034250418}
   DishType: 0
   OnPlate: 0
+  PeaText: {fileID: 0}
+  BananaText: {fileID: 0}
+  CarrotText: {fileID: 0}
+  PumpkinText: {fileID: 0}
+  PotatoText: {fileID: 0}
+  MushroomText: {fileID: 0}
+  OnionText: {fileID: 0}
+  TomatoText: {fileID: 0}
+  GarlicText: {fileID: 0}
+  ShrimpText: {fileID: 0}
+  MeatballText: {fileID: 0}
+  SausageText: {fileID: 0}
+  ChickenText: {fileID: 0}
+  SteakText: {fileID: 0}
+  CrayfishText: {fileID: 0}
+  BaconText: {fileID: 0}
+  CrabText: {fileID: 0}
+  TempuraText: {fileID: 0}
   player: 1
 --- !u!65 &1791148969
 BoxCollider:
@@ -20121,6 +20330,24 @@ MonoBehaviour:
   TextCollision: {fileID: 2034250418}
   DishType: 0
   OnPlate: 0
+  PeaText: {fileID: 0}
+  BananaText: {fileID: 0}
+  CarrotText: {fileID: 0}
+  PumpkinText: {fileID: 0}
+  PotatoText: {fileID: 0}
+  MushroomText: {fileID: 0}
+  OnionText: {fileID: 0}
+  TomatoText: {fileID: 0}
+  GarlicText: {fileID: 0}
+  ShrimpText: {fileID: 0}
+  MeatballText: {fileID: 0}
+  SausageText: {fileID: 0}
+  ChickenText: {fileID: 0}
+  SteakText: {fileID: 0}
+  CrayfishText: {fileID: 0}
+  BaconText: {fileID: 0}
+  CrabText: {fileID: 0}
+  TempuraText: {fileID: 0}
   player: 1
 --- !u!1 &1845121163
 GameObject:
@@ -20624,8 +20851,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1913937048}
-  m_LocalRotation: {x: -0, y: -0.6821531, z: -0, w: 0.7312094}
-  m_LocalPosition: {x: -4.800543, y: 1.8, z: -0.7613651}
+  m_LocalRotation: {x: -0, y: -0.59786487, z: -0, w: -0.801597}
+  m_LocalPosition: {x: 3.081566, y: 1.8, z: -0.7667088}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 898199674}
@@ -20634,7 +20861,7 @@ Transform:
   - {fileID: 1663168548}
   m_Father: {fileID: 0}
   m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: -86.024, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -286.56598, z: 0}
 --- !u!114 &1913937050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20693,7 +20920,7 @@ CharacterController:
   m_GameObject: {fileID: 1913937048}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.4
   m_Radius: 0.35
@@ -20736,7 +20963,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1913937048}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.35
   m_Height: 1.4
   m_Direction: 1
