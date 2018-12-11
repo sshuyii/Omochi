@@ -15,7 +15,7 @@ public class DishAppear : MonoBehaviour
 	public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player1;
 	public bool pickUp;
 	public Text PickUpText;
-	
+	//vegetables
 	public GameObject Potato;
 	public GameObject Pea;
 	public GameObject Banana;
@@ -25,6 +25,18 @@ public class DishAppear : MonoBehaviour
 	public GameObject Onion;
 	public GameObject Tomato;
 	public GameObject Garlic;
+	//meat 
+	public GameObject Shrimp;
+	public GameObject Meatball;
+	public GameObject Sausage;
+	public GameObject Chicken;
+	public GameObject Steak;
+	public GameObject Crayfish;
+	public GameObject Bacon;
+	public GameObject Crab;
+	public GameObject Tempura;
+	
+	
 	private bool LastFrameIsPressed = false;
 	public RaycastingControllerFromPlate RaycastScript;
 	//此脚本中自定义的potatoOnPlate函数并没有每一帧都被调用，然而它应该每一帧都被调用
@@ -91,6 +103,43 @@ public class DishAppear : MonoBehaviour
 			{
 				DishName = Tomato;
 			}
+			//肉的那一边
+			else if (RaycastScript.DishType == 11)
+			{
+				DishName = Shrimp;
+			}
+			else if (RaycastScript.DishType == 12)
+			{
+				DishName = Meatball;
+			}
+			else if (RaycastScript.DishType == 13)
+			{
+				DishName = Sausage;
+			}
+			else if (RaycastScript.DishType == 14)
+			{
+				DishName = Chicken;
+			}
+			else if (RaycastScript.DishType == 15)
+			{
+				DishName = Steak;
+			}
+			else if (RaycastScript.DishType == 16)
+			{
+				DishName = Crayfish;
+			}
+			else if (RaycastScript.DishType == 17)
+			{
+				DishName = Bacon;
+			}
+			else if (RaycastScript.DishType == 18)
+			{
+				DishName = Crab;
+			}
+			else if (RaycastScript.DishType == 19)
+			{
+				DishName = Tempura;
+			}
 
 			dishAppearText.text = button.BUTTON_STATE_IS_PRESSED.ToString();
 			
@@ -98,11 +147,11 @@ public class DishAppear : MonoBehaviour
 			dishPos.x = PlayerPlate.transform.position.x;
 			dishPos.y = PlayerPlate.transform.position.y + 0.2f;
 			dishPos.z = PlayerPlate.transform.position.z;
-
 			
-			playerMove.AddFoodList(Instantiate(DishName));
-			pickUp = true;
 			DishName.transform.position = dishPos;
+			Instantiate(DishName);
+			//playerMove.AddFoodList(Instantiate(DishName));
+			pickUp = true;
 
 			/*if (isPressed)
 			{

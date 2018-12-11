@@ -47,7 +47,7 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 		RaycastHit hit;
 		
 		//if ray casted on potatoes
-		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.1f))
+		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.0f))
 		{	
 			
 			
@@ -139,6 +139,79 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 2;
 				TextCollision.text = "Garlic =" + DishType;
+				
+			}
+			
+			//如果碰到shrimp
+			else if (hit.collider.CompareTag("Shrimp"))
+			{
+				
+				DishType = 11;
+				TextCollision.text = "Shrimp =" + DishType;
+				
+			}
+			//如果碰到Meatball
+			else if (hit.collider.CompareTag("Meatball"))
+			{
+				
+				DishType = 12;
+				TextCollision.text = "Meatball =" + DishType;
+				
+			}
+			//如果碰到Sausage
+			else if (hit.collider.CompareTag("Sausage"))
+			{
+				
+				DishType = 13;
+				TextCollision.text = "Sausage =" + DishType;
+				
+			}
+			//如果碰到Chicken
+			else if (hit.collider.CompareTag("Chicken"))
+			{
+				
+				DishType = 14;
+				TextCollision.text = "Chicken =" + DishType;
+				
+			}
+			//如果碰到Steak
+			else if (hit.collider.CompareTag("Steak"))
+			{
+				
+				DishType = 15;
+				TextCollision.text = "Steak =" + DishType;
+				
+			}
+			//如果碰到Bacon
+			else if (hit.collider.CompareTag("Crayfish"))
+			{
+				
+				DishType = 16;
+				TextCollision.text = "Crayfish =" + DishType;
+				
+			}
+			//如果碰到Bacon
+			else if (hit.collider.CompareTag("Bacon"))
+			{
+				
+				DishType = 17;
+				TextCollision.text = "Bacon =" + DishType;
+				
+			}
+			//如果碰到Crab
+			else if (hit.collider.CompareTag("Crab"))
+			{
+				
+				DishType = 18;
+				TextCollision.text = "Crab =" + DishType;
+				
+			}
+			//如果碰到Tempura
+			else if (hit.collider.CompareTag("Tempura"))
+			{
+				
+				DishType = 19;
+				TextCollision.text = "Tempura =" + DishType;
 				
 			}
 			

@@ -10,6 +10,7 @@ public class dishApearOnPhone : MonoBehaviour
 	public GameObject self;
 	public PotatoSwitchControl PotatoSwitchControl;
 	
+	//vegetable
 	public GameObject Potato;
 	public GameObject Pea;
 	public GameObject Banana;
@@ -19,6 +20,18 @@ public class dishApearOnPhone : MonoBehaviour
 	public GameObject Onion;
 	public GameObject Tomato;
 	public GameObject Garlic;
+	
+	//meat
+	public GameObject Shrimp;
+	public GameObject Meatball;
+	public GameObject Sausage;
+	public GameObject Chicken;
+	public GameObject Steak;
+	public GameObject Crayfish;
+	public GameObject Bacon;
+	public GameObject Crab;
+	public GameObject Tempura;
+	
 	private GameObject dishName;
 	
 	public Text PotatoText;
@@ -42,6 +55,9 @@ public class dishApearOnPhone : MonoBehaviour
 		int yushu = PotatoSwitchControl.DishTypePhone % 10;
 		
 		//PotatoText.text = self.GetComponent<ButtonClientController>().pressed.ToString();
+		
+		/*
+		//12/10目前决定不要UI出现在手机上了
 		//按了一下之后，菜就出现在手机上的盘子里
 		if (self.GetComponent<ButtonClientController>().pressed && !AlreadyAppeared)
 		{
@@ -49,6 +65,8 @@ public class dishApearOnPhone : MonoBehaviour
 			dishName = Potato;
 			
 			//决定到底要在手机上显示哪个菜的图片
+			
+			//vegetables
 			if (dishNumber == 1)
 			{
 				dishName = Potato;
@@ -86,6 +104,43 @@ public class dishApearOnPhone : MonoBehaviour
 				dishName = Tomato;
 			}
 			
+			//meat
+			else if (dishNumber == 11)
+			{
+				dishName = Shrimp;
+			}
+			else if (dishNumber == 12)
+			{
+				dishName = Meatball;
+			}
+			else if (dishNumber == 13)
+			{
+				dishName = Sausage;
+			}
+			else if (dishNumber == 14)
+			{
+				dishName = Chicken;
+			}
+			else if (dishNumber == 15)
+			{
+				dishName = Steak;
+			}
+			else if (dishNumber == 16)
+			{
+				dishName = Crayfish;
+			}
+			else if (dishNumber == 17)
+			{
+				dishName = Bacon;
+			}
+			else if (dishNumber == 18)
+			{
+				dishName = Crab;
+			}
+			else if (dishNumber == 19)
+			{
+				dishName = Tempura;
+			}
 
 			var PotatoPhone = Instantiate(dishName);
 			PotatoPhone.transform.SetParent(clientControlPanel.transform);
@@ -105,6 +160,7 @@ public class dishApearOnPhone : MonoBehaviour
 			PotatoText.text = "unPressed";
 			AlreadyAppeared = false;
 		}
+		*/
 		
 	}
 	

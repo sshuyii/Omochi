@@ -36,7 +36,7 @@ public class PlayerMove : MonoBehaviour
 		characterController.Move(move * Time.deltaTime);
 		characterController.transform.Rotate(0, (moveL - moveR) / radius * Time.deltaTime, 0);
 		w = (moveL - moveR) / radius;
-		MoveFoodOnPlate();
+		//MoveFoodOnPlate();
 
 	}
 

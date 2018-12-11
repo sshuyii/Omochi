@@ -753,6 +753,7 @@
           <e p="PlayerMove.cs" t="Include" />
           <e p="PotatoesCollider.cs" t="Include" />
           <e p="PotatoSwitchControl.cs" t="Include" />
+          <e p="PotRotating.cs" t="Include" />
           <e p="RaycastingControllerFromPlate.cs" t="Include" />
           <e p="ScoreController.cs" t="Include" />
         </e>

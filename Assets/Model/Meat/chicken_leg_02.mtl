@@ -1,0 +1,22 @@
+
+newmtl 0.FlatShadedMaterial
+Kd  0.67717504 0.3505766 0.0932942
+Ks  00 00 00
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+
+
+
+
+newmtl 1.FlatShadedMaterial
+Kd  0.713918 0.55061276 0.4399447
+Ks  00 00 00
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+
+
+

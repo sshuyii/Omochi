@@ -30,6 +30,16 @@ TagManager:
   - TamatoT
   - GarlicT
   - MushroomT
+  - TomatoT
+  - Crayfish
+  - Bacon
+  - Steak
+  - Shrimp
+  - Meatball
+  - Sausage
+  - Chicken
+  - Tempura
+  - Crab
   layers:
   - Default
   - TransparentFX

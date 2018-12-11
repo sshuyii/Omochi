@@ -7,6 +7,7 @@ public class ScoreController : MonoBehaviour
 {
 
 	public Text PlayerScore;
+	public int Score;
 	
 	// Use this for initialization
 	void Start () {
@@ -15,73 +16,69 @@ public class ScoreController : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+		PlayerScore.text = Score.ToString();
+
 
 	}
 
 	private void OnTriggerEnter(Collider other)
 	{
 		//如果banana掉到player1的锅里了
-		if (other.CompareTag("BananaT"))
+		if (other.CompareTag("PeaT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		
 		//如果banana掉到player1的锅里了
 		else if (other.CompareTag("BananaT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
+		else if (other.CompareTag("CarrotT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
+		else if (other.CompareTag("PumpkinT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
+		else if (other.CompareTag("PotatoT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
+		else if (other.CompareTag("MushroomT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
+		else if (other.CompareTag("OnionT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
+		else if (other.CompareTag("TomatoT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
 		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
+		else if (other.CompareTag("GarlicT"))
 		{
-			PlayerScore.text += 5;
+			Score += 5;
 
 		}
-		//如果banana掉到player1的锅里了
-		else if (other.CompareTag("BananaT"))
-		{
-			PlayerScore.text += 5;
 
-		}
 		
 	}
 }
