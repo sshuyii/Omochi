@@ -36,7 +36,14 @@ public class PlayerMove : MonoBehaviour
 		characterController.Move(move * Time.deltaTime);
 		characterController.transform.Rotate(0, (moveL - moveR) / radius * Time.deltaTime, 0);
 		w = (moveL - moveR) / radius;
-		//MoveFoodOnPlate();
+		Vector3 movement = Vector3.zero;
+		float vertSpeed = 0;
+		if (!characterController.isGrounded)
+		{
+			vertSpeed -= 9.8f *  5 * Time.deltaTime;
+		}
+		movement.y = vertSpeed;
+		characterController.Move(movement * Time.deltaTime);
 
 	}
 
