@@ -16,27 +16,27 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 	public int OnPlate;
 	//蹦出的字
 	//vegetables
-	public GameObject PeaText;
-	public GameObject BananaText;
-	public GameObject CarrotText;
-	public GameObject PumpkinText;
+//	public GameObject PeaText;
+//	public GameObject BananaText;
+//	public GameObject CarrotText;
+//	public GameObject PumpkinText;
 	public GameObject PotatoText;
-	public GameObject MushroomText;
-	public GameObject OnionText;
-	public GameObject TomatoText;
-	public GameObject GarlicText;
-	
-	//meat
-	public GameObject ShrimpText;
-	public GameObject MeatballText;
-	public GameObject SausageText;
-	public GameObject ChickenText;
-	public GameObject SteakText;
-	public GameObject CrayfishText;
-	public GameObject BaconText;
-	public GameObject CrabText;
-	public GameObject TempuraText;
-	
+//	public GameObject MushroomText;
+//	public GameObject OnionText;
+//	public GameObject TomatoText;
+//	public GameObject GarlicText;
+//	
+//	//meat
+//	public GameObject ShrimpText;
+//	public GameObject MeatballText;
+//	public GameObject SausageText;
+//	public GameObject ChickenText;
+//	public GameObject SteakText;
+//	public GameObject CrayfishText;
+//	public GameObject BaconText;
+//	public GameObject CrabText;
+//	public GameObject TempuraText;
+//	
 	//获取盘子的位置
 	//private GameObject xxx = GameObject.Find("ShrimpText");
 	//public GameObject PotatoPlate;
@@ -86,12 +86,12 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 		//intBackchannel.setValue(DishType);//决定向手机传输什么变量INT
 
 		//draw a line pointing forward of the plate
-		Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward)*1, Color.green);
+		Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward)*1.1f, Color.green);
 
 		RaycastHit hit;
 		
 		//if ray casted on potatoes
-		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.0f))
+		if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.1f))
 		{	
 			
 			
@@ -103,6 +103,7 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				TextCollision.text = "Potatoes1 =" + DishType;
 				
 				PotatoText.SetActive(true);
+				
 				
 
 				//intBackchannel.setValue(DishType);//决定向手机传输什么变量INT
@@ -129,7 +130,7 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 3;
 				TextCollision.text = "Pea =" + DishType;
-				Instantiate(PeaText);
+				//PeaText.SetActive(true);
 
 				
 			}
@@ -139,7 +140,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 4;
 				TextCollision.text = "Banana =" + DishType;
-				Instantiate(BananaText);
+				//BananaText.SetActive(true);
+
 
 			}
 			//如果碰到Carrot
@@ -148,7 +150,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 5;
 				TextCollision.text = "Carrot =" + DishType;
-				Instantiate(CarrotText);
+				//CarrotText.SetActive(true);
+
 
 			}
 			//如果碰到Pumpkin
@@ -157,7 +160,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 6;
 				TextCollision.text = "Pumpkin =" + DishType;
-				Instantiate(PumpkinText);
+				//PumpkinText.SetActive(true);
+
 
 			}
 			//如果碰到Mushroom
@@ -166,7 +170,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 7;
 				TextCollision.text = "Mushroom =" + DishType;
-				Instantiate(MushroomText);
+				//MushroomText.SetActive(true);
+
 
 			}
 			//如果碰到Onion
@@ -175,7 +180,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 8;
 				TextCollision.text = "Onion =" + DishType;
-				Instantiate(OnionText);
+				//OnionText.SetActive(true);
+
 
 			}
 			//如果碰到Tomato
@@ -184,7 +190,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 9;
 				TextCollision.text = "Tomato =" + DishType;
-				Instantiate(TomatoText);
+				//TomatoText.SetActive(true);
+
 
 			}
 			//如果碰到Garlic
@@ -193,7 +200,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 2;
 				TextCollision.text = "Garlic =" + DishType;
-				Instantiate(GarlicText);
+				//GarlicText.SetActive(true);
+
 
 			}
 			
@@ -203,7 +211,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 11;
 				TextCollision.text = "Shrimp =" + DishType;
-				Instantiate(ShrimpText);
+				//ShrimpText.SetActive(true);
+
 
 			}
 			//如果碰到Meatball
@@ -212,7 +221,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 12;
 				TextCollision.text = "Meatball =" + DishType;
-				Instantiate(MeatballText);
+				//MeatballText.SetActive(true);
+
 
 			}
 			//如果碰到Sausage
@@ -221,7 +231,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 13;
 				TextCollision.text = "Sausage =" + DishType;
-				Instantiate(SausageText);
+				//SausageText.SetActive(true);
+
 
 			}
 			//如果碰到Chicken
@@ -230,7 +241,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 14;
 				TextCollision.text = "Chicken =" + DishType;
-				Instantiate(ChickenText);
+				//ChickenText.SetActive(true);
+
 
 			}
 			//如果碰到Steak
@@ -239,7 +251,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 15;
 				TextCollision.text = "Steak =" + DishType;
-				Instantiate(SteakText);
+				//SteakText.SetActive(true);
+
 
 			}
 			//如果碰到Bacon
@@ -248,7 +261,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 16;
 				TextCollision.text = "Crayfish =" + DishType;
-				Instantiate(CrayfishText);
+				//CrayfishText.SetActive(true);
+
 
 			}
 			//如果碰到Bacon
@@ -257,7 +271,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 17;
 				TextCollision.text = "Bacon =" + DishType;
-				Instantiate(BaconText);
+				//BaconText.SetActive(true);
+
 
 			}
 			//如果碰到Crab
@@ -266,7 +281,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 18;
 				TextCollision.text = "Crab =" + DishType;
-				Instantiate(CrabText);
+				//CrabText.SetActive(true);
+
 
 			}
 			//如果碰到Tempura
@@ -275,7 +291,8 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 				
 				DishType = 19;
 				TextCollision.text = "Tempura =" + DishType;
-				Instantiate(TempuraText);
+				//TempuraText.SetActive(true);
+
 
 			}
 			
@@ -283,6 +300,9 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 			{
 				DishType = 0;
 				TextCollision.text = "Potatoes1 =" + DishType;
+
+				
+
 				//intBackchannel.setValue(DishType);//决定向手机传输什么变量INT
 			}
 			
@@ -318,7 +338,9 @@ public class RaycastingControllerFromPlate : MonoBehaviour
 		{
 			DishType = 0;
 			TextCollision.text = "Potatoes1 =" + DishType;
-			//intBackchannel.setValue(DishType);//决定向手机传输什么变量INT
+			
+
+			intBackchannel.setValue(DishType);//决定向手机传输什么变量INT
 
 		}
 			//TextCollision.text = "Potatoes1 = null";
