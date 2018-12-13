@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using HappyFunTimes;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour
 {
 
-	public Text PlayerScore;
-	public int Score1;
+	//public Text PlayerScore;
+	//public int Score1;
 	public int Player;
-	public int Score2;
+	//public int Score2;
 	public int DishGenerateType;
 	public string DishPotName;
 	public bool isPutInPot = false;
-
+	public TimerController timerController;
 
 	//vegetables
 //	public GameObject PeaText;
@@ -46,7 +47,7 @@ public class ScoreController : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		PlayerScore.text = Score1.ToString();
+		//PlayerScore.text = Score1.ToString();
 
 		//DishGenerateType = (int) Random.Range(0.0f, 19.0f);
 		
@@ -172,11 +173,11 @@ public class ScoreController : MonoBehaviour
 		{
 			if (Player == 1)
 			{
-				Score1 += 5;
+				timerController.score1 += 5;
 			}
 			else if (Player == 2)
 			{
-				Score2 += 5;
+				timerController.score2 += 5;
 			}
 
 

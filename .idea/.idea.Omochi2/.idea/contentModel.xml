@@ -791,6 +791,7 @@
           <e p="FontController.cs" t="Include" />
           <e p="HandsOnPlate.cs" t="Include" />
           <e p="IntServerBackchannelDishes.cs" t="Include" />
+          <e p="Look.cs" t="Include" />
           <e p="OnPlate.cs" t="Include" />
           <e p="PlatePosition.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
