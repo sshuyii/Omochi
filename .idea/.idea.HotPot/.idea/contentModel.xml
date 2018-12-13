@@ -760,6 +760,7 @@
           <e p="RaycastCubeController.cs" t="Include" />
           <e p="RaycastingControllerFromPlate.cs" t="Include" />
           <e p="ScoreController.cs" t="Include" />
+          <e p="TimerController.cs" t="Include" />
         </e>
         <e p="SD Citizen Characters - Volume01" t="Include">
           <e p="ReadMe (SD Citizen Characters - Volume01).txt" t="Include" />

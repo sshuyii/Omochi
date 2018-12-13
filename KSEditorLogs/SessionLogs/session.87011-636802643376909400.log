@@ -1,0 +1,93 @@
+2018-12-13 02:18:59.3600 [DEBUG] Validating model...
+2018-12-13 02:18:59.5709 [DEBUG] Model updated
+2018-12-13 02:18:59.5712 [DEBUG] Authenticating with server...
+2018-12-13 02:19:00.0913 [DEBUG] Connected to room. (87011:SceneFusion:SceneFusion)
+2018-12-13 02:19:00.0973 [INFO] Connected to server.
+2018-12-13 02:19:00.0976 [DEBUG] OS : Unix 18.2.0.0
+2018-12-13 02:19:00.0976 [DEBUG] Unity Version : 2018.2.16f1
+2018-12-13 02:19:00.0978 [DEBUG] Pro License : False
+2018-12-13 02:19:00.0981 [DEBUG] Platform : OSXEditor
+2018-12-13 02:19:00.0982 [DEBUG] Build Target : iOS
+2018-12-13 02:19:00.0982 [DEBUG] Scene Fusion version : 1.8.1
+2018-12-13 02:19:00.0983 [DEBUG] Scene Fusion client build : 4
+2018-12-13 02:19:00.0983 [DEBUG] User : sc7286@nyu.edu
+2018-12-13 02:19:00.0984 [DEBUG] Waiting for server response
+2018-12-13 02:19:00.3569 [DEBUG] Tier: Scene Fusion Free, Permissions: 00001400
+2018-12-13 02:19:00.3569 [DEBUG] User Permissions: FFFFFFFF
+2018-12-13 02:19:00.4994 [DEBUG] No stand-in for UnityEngine.ProceduralMaterial
+2018-12-13 02:19:00.4994 [DEBUG] No stand-in for UnityEngine.ProceduralTexture
+2018-12-13 02:19:00.7441 [DEBUG] Uploading scene 'ControlsKitchenSinkServerScene'
+2018-12-13 02:19:01.2493 [DEBUG] Compressing scene data
+2018-12-13 02:19:01.6643 [DEBUG] Spawn request. (Objects: 352)
+2018-12-13 02:19:01.6681 [DEBUG] Entity RPC. (Id: 1, Size: 13477, Reporting Threshold: 10000)
+2018-12-13 02:19:02.3268 [DEBUG] Loading complete
+2018-12-13 02:24:03.3370 [DEBUG] Disconnecting temporarily to recompile.
+2018-12-13 02:24:03.3376 [DEBUG] Disconnecting from room (87011:SceneFusion:SceneFusion)
+2018-12-13 02:24:03.3431 [INFO] Disconnected from server.
+2018-12-13 02:24:03.3433 [DEBUG] Disconnect. (Duration: 303)
+2018-12-13 02:24:05.3846 [DEBUG] Connecting
+2018-12-13 02:24:05.4006 [DEBUG] Connecting to room (87011:SceneFusion:SceneFusion) via TCP at roommanager-ec2-34-208-239-176.kinematicsoup.com:1065
+2018-12-13 02:24:05.4017 [DEBUG] Host connection. (Session: 87011)
+2018-12-13 02:24:05.8177 [DEBUG] Validating model...
+2018-12-13 02:24:06.0281 [DEBUG] Model updated
+2018-12-13 02:24:06.0282 [DEBUG] Authenticating with server...
+2018-12-13 02:24:06.2354 [DEBUG] Connected to room. (87011:SceneFusion:SceneFusion)
+2018-12-13 02:24:06.2559 [INFO] Connected to server.
+2018-12-13 02:24:06.2560 [DEBUG] OS : Unix 18.2.0.0
+2018-12-13 02:24:06.2560 [DEBUG] Unity Version : 2018.2.16f1
+2018-12-13 02:24:06.2561 [DEBUG] Pro License : False
+2018-12-13 02:24:06.2561 [DEBUG] Platform : OSXEditor
+2018-12-13 02:24:06.2561 [DEBUG] Build Target : iOS
+2018-12-13 02:24:06.2562 [DEBUG] Scene Fusion version : 1.8.1
+2018-12-13 02:24:06.2562 [DEBUG] Scene Fusion client build : 4
+2018-12-13 02:24:06.2562 [DEBUG] User : sc7286@nyu.edu
+2018-12-13 02:24:06.2563 [DEBUG] Waiting for server response
+2018-12-13 02:24:06.7596 [DEBUG] Tier: Scene Fusion Free, Permissions: 00001400
+2018-12-13 02:24:06.7596 [DEBUG] User Permissions: FFFFFFFF
+2018-12-13 02:24:06.7611 [DEBUG] No stand-in for UnityEngine.ProceduralMaterial
+2018-12-13 02:24:06.7611 [DEBUG] No stand-in for UnityEngine.ProceduralTexture
+2018-12-13 02:24:07.1281 [DEBUG] Loading complete
+2018-12-13 02:24:22.7958 [DEBUG] Disconnecting temporarily to recompile.
+2018-12-13 02:24:22.7959 [DEBUG] Disconnecting from room (87011:SceneFusion:SceneFusion)
+2018-12-13 02:24:22.8059 [INFO] Disconnected from server.
+2018-12-13 02:24:22.8059 [DEBUG] Disconnect. (Duration: 322)
+2018-12-13 02:24:30.8075 [DEBUG] Scene Fusion version 1.8.1-4
+2018-12-13 02:24:39.5716 [DEBUG] Scene Fusion version 1.8.1-4
+2018-12-13 02:24:40.0942 [DEBUG] Connecting
+2018-12-13 02:24:40.1280 [DEBUG] Connecting to room (87011:SceneFusion:SceneFusion) via TCP at roommanager-ec2-34-208-239-176.kinematicsoup.com:1065
+2018-12-13 02:24:40.1325 [DEBUG] Host connection. (Session: 87011)
+2018-12-13 02:24:40.4960 [DEBUG] Validating model...
+2018-12-13 02:24:40.7047 [DEBUG] Model updated
+2018-12-13 02:24:40.7051 [DEBUG] Authenticating with server...
+2018-12-13 02:24:40.9142 [DEBUG] Connected to room. (87011:SceneFusion:SceneFusion)
+2018-12-13 02:24:40.9276 [INFO] Connected to server.
+2018-12-13 02:24:40.9278 [DEBUG] OS : Unix 18.2.0.0
+2018-12-13 02:24:40.9279 [DEBUG] Unity Version : 2018.2.16f1
+2018-12-13 02:24:40.9280 [DEBUG] Pro License : False
+2018-12-13 02:24:40.9283 [DEBUG] Platform : OSXEditor
+2018-12-13 02:24:40.9283 [DEBUG] Build Target : iOS
+2018-12-13 02:24:40.9284 [DEBUG] Scene Fusion version : 1.8.1
+2018-12-13 02:24:40.9284 [DEBUG] Scene Fusion client build : 4
+2018-12-13 02:24:40.9285 [DEBUG] User : sc7286@nyu.edu
+2018-12-13 02:24:40.9285 [DEBUG] Waiting for server response
+2018-12-13 02:24:41.4961 [DEBUG] Tier: Scene Fusion Free, Permissions: 00001400
+2018-12-13 02:24:41.4962 [DEBUG] User Permissions: FFFFFFFF
+2018-12-13 02:24:41.5299 [DEBUG] No stand-in for UnityEngine.ProceduralMaterial
+2018-12-13 02:24:41.5300 [DEBUG] No stand-in for UnityEngine.ProceduralTexture
+2018-12-13 02:24:41.9566 [DEBUG] Loading complete
+2018-12-13 02:25:36.2136 [WARNING] Unable to load prefab 'Assets/Model/lantern.fbx'.
+2018-12-13 02:25:36.2203 [WARNING] Unable to load prefab 'Assets/Model/lantern.fbx'.
+2018-12-13 02:25:36.2215 [WARNING] Unable to load prefab 'Assets/Model/lantern.fbx'.
+2018-12-13 02:26:16.1797 [DEBUG] Disconnecting temporarily to recompile.
+2018-12-13 02:26:16.1808 [DEBUG] Disconnecting from room (87011:SceneFusion:SceneFusion)
+2018-12-13 02:26:16.1880 [INFO] Disconnected from server.
+2018-12-13 02:26:16.1882 [DEBUG] Disconnect. (Duration: 436)
+2018-12-13 02:26:24.7849 [DEBUG] Scene Fusion version 1.8.1-4
+2018-12-13 02:26:25.5057 [DEBUG] Property changes detected after recompile. Will not reconnect.
+2018-12-13 02:26:25.5275 [DEBUG] Connecting to room (87011:SceneFusion:SceneFusion) via TCP at roommanager-ec2-34-208-239-176.kinematicsoup.com:1065
+2018-12-13 02:26:25.9938 [DEBUG] Validating model...
+2018-12-13 02:26:26.2028 [DEBUG] Model updated
+2018-12-13 02:26:26.2033 [DEBUG] Authenticating with server...
+2018-12-13 02:26:26.4088 [DEBUG] Authentication with the remote host failed. (87011:SceneFusion:SceneFusion)
+2018-12-13 02:26:26.5159 [DEBUG] Connection failed. (87011:SceneFusion:SceneFusion)
+2018-12-13 02:26:52.6240 [DEBUG] Connection failed. (87011:SceneFusion:SceneFusion)
