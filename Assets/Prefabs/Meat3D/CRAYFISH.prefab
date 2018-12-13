@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4858143458965000}
   - component: {fileID: 64605572761728800}
   - component: {fileID: 54645469330817696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CRAYFISH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4478996286673164}
   - component: {fileID: 33042070439217162}
   - component: {fileID: 23190424281518756}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

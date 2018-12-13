@@ -41,6 +41,7 @@ TagManager:
   - Tempura
   - Crab
   - Player1Text
+  - Player2Text
   layers:
   - Default
   - TransparentFX
@@ -51,7 +52,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Insmallcamera
   - 
   - 
   - 

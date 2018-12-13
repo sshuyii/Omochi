@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: HotPot
-  m_Shader: {fileID: 4800000, guid: 9ec7ccbd4289d0543939f61121224d93, type: 3}
-  m_ShaderKeywords: TCP2_SPEC
+  m_Shader: {fileID: 4800000, guid: 46959d8d823e39f4da46a6e82f0a41c1, type: 3}
+  m_ShaderKeywords: TCP2_REFLECTION TCP2_RIM TCP2_SPEC
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23,7 +23,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: cda2308477a69424cb415e057e1dae54, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -77,7 +77,9 @@ Material:
     - _RampSmooth: 0.1
     - _RampThreshold: 0.5
     - _ReflSmoothness: 1
-    - _Shininess: 0.41
+    - _RimMax: 0.94
+    - _RimMin: 0.53
+    - _Shininess: 0.2
     - _SmoothnessTextureChannel: 0
     - _SpecSmooth: 0.05
     - _SpecularHighlights: 1
@@ -85,9 +87,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6037736, g: 0.42057186, b: 0.054111768, a: 1}
+    - _Color: {r: 0.3773585, g: 0.25067386, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HColor: {r: 0.785, g: 0.785, b: 0.785, a: 1}
-    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _HColor: {r: 0.8113208, g: 0.69686514, b: 0.60083663, a: 1}
+    - _ReflectColor: {r: 0.9245283, g: 0.5761226, b: 0.44918123, a: 0.5}
+    - _RimColor: {r: 1, g: 0.8379797, b: 0.6179246, a: 0.6}
+    - _RimDir: {r: 0, g: 0, b: 1, a: 0}
     - _SColor: {r: 0.195, g: 0.195, b: 0.195, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

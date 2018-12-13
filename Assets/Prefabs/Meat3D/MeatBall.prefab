@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23071564172459918}
   - component: {fileID: 64627333470837454}
   - component: {fileID: 54189648112671800}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MeatBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

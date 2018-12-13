@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23387830855590568}
   - component: {fileID: 64458854603715438}
   - component: {fileID: 54929731414871706}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shrimp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -31,7 +31,7 @@ public class PotatoesCollider : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		print(other.name);
-		if(other.CompareTag("Player1Text") || other.CompareTag("Player2"))
+		if(other.CompareTag("Player1Text") || other.CompareTag("Player2Text"))
 		{
 			DishText.SetActive(true);
 			countCollider += 1;
@@ -43,7 +43,7 @@ public class PotatoesCollider : MonoBehaviour
 	void OnTriggerExit(Collider other)
 	{
 		
-		if(other.CompareTag("Player1Text") || other.CompareTag("Player2"))
+		if(other.CompareTag("Player1Text") || other.CompareTag("Player2Text"))
 		{
 			countCollider -= 1;
 		}

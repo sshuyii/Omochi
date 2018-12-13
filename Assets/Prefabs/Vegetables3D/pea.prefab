@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23930381682657678}
   - component: {fileID: 64399043563414482}
   - component: {fileID: 54844209560883540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pea
   m_TagString: PeaT
   m_Icon: {fileID: 0}

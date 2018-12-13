@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23772062321766632}
   - component: {fileID: 64572966726568756}
   - component: {fileID: 54079916562325958}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bacon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

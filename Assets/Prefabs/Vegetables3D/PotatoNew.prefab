@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 136123955675225504}
   - component: {fileID: 54677226161103862}
   - component: {fileID: 64452539127052700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PotatoNew
   m_TagString: PotatoT
   m_Icon: {fileID: 0}

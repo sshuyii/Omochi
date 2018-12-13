@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Yiren Wang\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Yiren Wang\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Yiren Wang\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Omochi2.-1998313948.00" t="ExcludeRecursive" />
+    <e p="D:\unityProject\Omochi2" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Easy WiFi Controller" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="ClientBackchannel" t="Include">
+              <e p="BoolClientBackchannel.cs" t="Include" />
+              <e p="DecimalClientBackchannel.cs" t="Include" />
+              <e p="DoubleClientBackchannel.cs" t="Include" />
+              <e p="FloatClientBackchannel.cs" t="Include" />
+              <e p="IClientBackchannel.cs" t="Include" />
+              <e p="IntClientBackchannel.cs" t="Include" />
+              <e p="StringClientBackchannel.cs" t="Include" />
+            </e>
+            <e p="ClientControllers" t="Include">
+              <e p="AccelerometerClientController.cs" t="Include" />
+              <e p="BoolDataClientController.cs" t="Include" />
+              <e p="ButtonClientController.cs" t="Include" />
+              <e p="ConnectionClientController.cs" t="Include" />
+              <e p="DecimalDataClientController.cs" t="Include" />
+              <e p="DoubleDataClientController.cs" t="Include" />
+              <e p="DpadClientController.cs" t="Include" />
+              <e p="FloatDataClientController.cs" t="Include" />
+              <e p="GyroClientController.cs" t="Include" />
+              <e p="IClientController.cs" t="Include" />
+              <e p="IntDataClientController.cs" t="Include" />
+              <e p="JoystickClientController.cs" t="Include" />
+              <e p="PinchZoomTouchpadClientController.cs" t="Include" />
+              <e p="ScrollableButtonClientController.cs" t="Include" />
+              <e p="SliderClientController.cs" t="Include" />
+              <e p="StringDataClientController.cs" t="Include" />
+              <e p="SwitchButtonClientController.cs" t="Include" />
+              <e p="TouchpadClientController.cs" t="Include" />
+            </e>
+            <e p="Core" t="Include">
+              <e p="BackchannelTypes" t="Include">
+                <e p="BoolBackchannelType.cs" t="Include" />
+                <e p="DecimalBackchannelType.cs" t="Include" />
+                <e p="DoubleBackchannelType.cs" t="Include" />
+                <e p="FloatBackchannelType.cs" t="Include" />
+                <e p="IntBackchannelType.cs" t="Include" />
+                <e p="StringBackchannelType.cs" t="Include" />
+              </e>
+              <e p="ControllerTypes" t="Include">
+                <e p="AccelerometerControllerType.cs" t="Include" />
+                <e p="BaseControllerType.cs" t="Include" />
+                <e p="ButtonControllerType.cs" t="Include" />
+                <e p="DpadControllerType.cs" t="Include" />
+                <e p="GyroControllerType.cs" t="Include" />
+                <e p="JoystickControllerType.cs" t="Include" />
+                <e p="PinchZoomTouchpadControllerType.cs" t="Include" />
+                <e p="SliderControllerType.cs" t="Include" />
+                <e p="TouchpadControllerType.cs" t="Include" />
+              </e>
+              <e p="EasyWiFiConstants.cs" t="Include" />
+              <e p="EasyWiFiController.cs" t="Include" />
+              <e p="EasyWiFiManager.cs" t="Include" />
+              <e p="EasyWiFiUtilities.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="EasyWiFiControlsMenu.cs" t="Include" />
+                <e p="EasyWiFiLandscapeController.cs" t="Include" />
+                <e p="EasyWiFiManagerEditor.cs" t="Include" />
+                <e p="EasyWiFiMenu.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Miscellaneous" t="Include">
+              <e p="alphaBlink.cs" t="Include" />
+              <e p="AnchorTextAbove.cs" t="Include" />
+              <e p="CameraFollowBall.cs" t="Include" />
+              <e p="ChangeColor.cs" t="Include" />
+              <e p="ComputerInput.cs" t="Include" />
+              <e p="ControllerConnected.cs" t="Include" />
+              <e p="painting.cs" t="Include" />
+              <e p="SelectPlayer.cs" t="Include" />
+              <e p="Spedometer.cs" t="Include" />
+              <e p="Steering.cs" t="Include" />
+            </e>
+            <e p="ServerBackchannel" t="Include">
+              <e p="BoolServerBackchannel.cs" t="Include" />
+              <e p="DecimalServerBackchannel.cs" t="Include" />
+              <e p="DoubleServerBackchannel.cs" t="Include" />
+              <e p="FloatServerBackchannel.cs" t="Include" />
+              <e p="IntServerBackchannel.cs" t="Include" />
+              <e p="IServerBackchannel.cs" t="Include" />
+              <e p="StringServerBackchannel.cs" t="Include" />
+            </e>
+            <e p="ServerControllers" t="Include">
+              <e p="CameraPinchZoomTouchpadServerController.cs" t="Include" />
+              <e p="CustomAccelerometerServerController.cs" t="Include" />
+              <e p="CustomBoolDataServerController.cs" t="Include" />
+              <e p="CustomButtonServerController.cs" t="Include" />
+              <e p="CustomDecimalDataServerController.cs" t="Include" />
+              <e p="CustomDoubleDataServerController.cs" t="Include" />
+              <e p="CustomDpadServerController.cs" t="Include" />
+              <e p="CustomFloatDataServerController.cs" t="Include" />
+              <e p="CustomGyroServerController.cs" t="Include" />
+              <e p="CustomIntDataServerController.cs" t="Include" />
+              <e p="CustomJoystickServerController.cs" t="Include" />
+              <e p="CustomPinchZoomTouchpadServerController.cs" t="Include" />
+              <e p="CustomSliderServerController.cs" t="Include" />
+              <e p="CustomStringDataServerController.cs" t="Include" />
+              <e p="CustomTouchpadServerController.cs" t="Include" />
+              <e p="EasyWiFiInputModule.cs" t="Include" />
+              <e p="IServerController.cs" t="Include" />
+              <e p="MatchOrientationGyroServerController.cs" t="Include" />
+              <e p="RightTouchpadServerController.cs" t="Include" />
+              <e p="StandardAccelerometerServerController.cs" t="Include" />
+              <e p="StandardDpadServerController.cs" t="Include" />
+              <e p="StandardJoystickServerController.cs" t="Include" />
+              <e p="StandardSliderServerController.cs" t="Include" />
+              <e p="StandardTouchpadServerController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Farmers_Market_Gourmet_Pack" t="Include">
+          <e p="UAS_FMGP_Readme.txt" t="Include" />
+        </e>
+        <e p="FREE Food Pack" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Food.shader" t="Include" />
+          </e>
+        </e>
+        <e p="HappyFunTimes" t="Include">
+          <e p="HappyFunTimesCore" t="Include">
+            <e p="DNS" t="Include">
+              <e p="Client" t="Include">
+                <e p="ClientRequest.cs" t="Include" />
+                <e p="ClientResponse.cs" t="Include" />
+                <e p="DnsClient.cs" t="Include" />
+                <e p="RequestResolver" t="Include">
+                  <e p="IRequestResolver.cs" t="Include" />
+                  <e p="NullRequestResolver.cs" t="Include" />
+                  <e p="TcpRequestResolver.cs" t="Include" />
+                  <e p="UdpRequestResolver.cs" t="Include" />
+                </e>
+                <e p="ResponseException.cs" t="Include" />
+              </e>
+              <e p="Protocol" t="Include">
+                <e p="Domain.cs" t="Include" />
+                <e p="Header.cs" t="Include" />
+                <e p="IMessage.cs" t="Include" />
+                <e p="IMessageEntry.cs" t="Include" />
+                <e p="IRequest.cs" t="Include" />
+                <e p="IResponse.cs" t="Include" />
+                <e p="Marshalling" t="Include">
+                  <e p="EndianAttribute.cs" t="Include" />
+                  <e p="Endianness.cs" t="Include" />
+                  <e p="Struct.cs" t="Include" />
+                </e>
+                <e p="OperationCode.cs" t="Include" />
+                <e p="Question.cs" t="Include" />
+                <e p="RecordClass.cs" t="Include" />
+                <e p="RecordType.cs" t="Include" />
+                <e p="Request.cs" t="Include" />
+                <e p="ResourceRecords" t="Include">
+                  <e p="BaseResourceRecord.cs" t="Include" />
+                  <e p="CanonicalNameResourceRecord.cs" t="Include" />
+                  <e p="IPAddressResourceRecord.cs" t="Include" />
+                  <e p="IResourceRecord.cs" t="Include" />
+                  <e p="MailExchangeResourceRecord.cs" t="Include" />
+                  <e p="NameServerResourceRecord.cs" t="Include" />
+                  <e p="PointerResourceRecord.cs" t="Include" />
+                  <e p="ResourceRecord.cs" t="Include" />
+                  <e p="ResourceRecordFactory.cs" t="Include" />
+                  <e p="StartOfAuthorityResourceRecord.cs" t="Include" />
+                </e>
+                <e p="Response.cs" t="Include" />
+                <e p="ResponseCode.cs" t="Include" />
+                <e p="Utils" t="Include">
+                  <e p="ByteExtensions.cs" t="Include" />
+                  <e p="ByteStream.cs" t="Include" />
+                  <e p="ObjectStringifier.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Server" t="Include">
+                <e p="DnsServer.cs" t="Include" />
+                <e p="IQuestionAnswerer.cs" t="Include" />
+                <e p="MasterFile.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="HFTHappyFunTimesSettingsEditor.cs" t="Include" />
+              <e p="HFTMenuItems.cs" t="Include" />
+              <e p="HFTProcessWebFile.cs" t="Include" />
+              <e p="HFTSetup.cs" t="Include" />
+            </e>
+            <e p="GameServer.cs" t="Include" />
+            <e p="HFTArgParser.cs" t="Include" />
+            <e p="HFTArgUtils.cs" t="Include" />
+            <e p="HFTCheck.cs" t="Include" />
+            <e p="HFTConnectionManager.cs" t="Include" />
+            <e p="HFTConstants.cs" t="Include" />
+            <e p="HFTDialog.cs" t="Include" />
+            <e p="HFTEventProcessor.cs" t="Include" />
+            <e p="HFTGameConnector.cs" t="Include" />
+            <e p="HFTGameOptions.cs" t="Include" />
+            <e p="HFTGlobalEventEmitter.cs" t="Include" />
+            <e p="HFTHappyFunTimesSettings.cs" t="Include" />
+            <e p="HFTIpUtils.cs" t="Include" />
+            <e p="HFTLog.cs" t="Include" />
+            <e p="HFTLogger.cs" t="Include" />
+            <e p="HFTManager.cs" t="Include" />
+            <e p="HFTMessageCmd.cs" t="Include" />
+            <e p="HFTNoPlayers.cs" t="Include" />
+            <e p="HFTPlayerManager.cs" t="Include" />
+            <e p="HFTPostMessages.cs" t="Include" />
+            <e p="HFTRuntimeOptions.cs" t="Include" />
+            <e p="HFTSyncedClock.cs" t="Include" />
+            <e p="HFTThreadSafe.cs" t="Include" />
+            <e p="HFTUtil.cs" t="Include" />
+            <e p="LocalNetPlayer.cs" t="Include" />
+            <e p="NetPlayer.cs" t="Include" />
+            <e p="PlayerConnectMessageArgs.cs" t="Include" />
+            <e p="PlayerConnector.cs" t="Include" />
+            <e p="PlayerSpawner.cs" t="Include" />
+            <e p="RealNetPlayer.cs" t="Include" />
+            <e p="Server" t="Include">
+              <e p="HFTBrowserVersion.cs" t="Include" />
+              <e p="HFTCaptivePortalHandler.cs" t="Include" />
+              <e p="HFTDNSRunner.cs" t="Include" />
+              <e p="HFTDNSServer.cs" t="Include" />
+              <e p="HFTDNSServerHelper.cs" t="Include" />
+              <e p="HFTDnsUtils.cs" t="Include" />
+              <e p="HFTGame.cs" t="Include" />
+              <e p="HFTGameGroup.cs" t="Include" />
+              <e p="HFTGameManager.cs" t="Include" />
+              <e p="HFTHttpRequest.cs" t="Include" />
+              <e p="HFTMimeType.cs" t="Include" />
+              <e p="HFTPlayer.cs" t="Include" />
+              <e p="HFTRelayMsgs.cs" t="Include" />
+              <e p="HFTRouter.cs" t="Include" />
+              <e p="HFTSite.cs" t="Include" />
+              <e p="HFTSocket.cs" t="Include" />
+              <e p="HFTWebFileDB.cs" t="Include" />
+              <e p="HFTWebFileLoader.cs" t="Include" />
+              <e p="HFTWebServer.cs" t="Include" />
+              <e p="HFTWebServerUtils.cs" t="Include" />
+            </e>
+          </e>
+          <e p="MoreSamples" t="Include">
+            <e p="camera" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesCameraExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleCameraGameSettings.cs" t="Include" />
+                <e p="ExampleCameraPlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="character-select" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesCharacterSelectExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleCharacterSelect.cs" t="Include" />
+                <e p="ExampleCharacterSelectGameSettings.cs" t="Include" />
+                <e p="ExampleCharacterSelectGoal.cs" t="Include" />
+                <e p="ExampleCharacterSelectPlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="clean" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesCleanExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleCleanGameSettings.cs" t="Include" />
+                <e p="ExampleCleanGoal.cs" t="Include" />
+                <e p="ExampleCleanPlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="multi-machine" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="MultiMachine-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ColorUtils.cs" t="Include" />
+                <e p="MultiMachineBirdScript.cs" t="Include" />
+                <e p="MultiMachineLevelSettings.cs" t="Include" />
+              </e>
+            </e>
+            <e p="multi-machine-syncedclock" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="MultiMachineSyncedClockExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExamplePickARandomColor.cs" t="Include" />
+                <e p="ExampleRotateBySyncClock.cs" t="Include" />
+                <e p="ExampleSetCameraAcrossMachines.cs" t="Include" />
+              </e>
+            </e>
+            <e p="simple" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="HappyFunTimesSimpleExample-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExampleSimpleGameSettings.cs" t="Include" />
+                <e p="ExampleSimpleGoal.cs" t="Include" />
+                <e p="ExampleSimplePlayer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="syncedclock" t="Include">
+              <e p="Scenes" t="Include">
+                <e p="SyncedClockScene-README.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="SyncedClockPlayer.cs" t="Include" />
+                <e p="SyncedClockScript.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Resources" t="Include">
+            <e p="HappyFunTimesAutoGeneratedDoNotEdit" t="Include">
+              <e p="__dir__.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Samples" t="Include">
+            <e p="Scenes" t="Include">
+              <e p="2DPlatformScene-README.txt" t="Include" />
+              <e p="3DCharacterScene-README.txt" t="Include" />
+              <e p="ControllerTestScene-README.txt" t="Include" />
+              <e p="InstructionsScene-README.txt" t="Include" />
+              <e p="OrientationScene-README.txt" t="Include" />
+              <e p="PlayersAlreadyInHierarchyScene-README.txt" t="Include" />
+              <e p="SoundTestScene-README.txt" t="Include" />
+              <e p="TouchScene-README.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="BirdScript.cs" t="Include" />
+              <e p="ControllerTestScript.cs" t="Include" />
+              <e p="LevelSettings.cs" t="Include" />
+              <e p="OrientationLevelSettings.cs" t="Include" />
+              <e p="PhonePlayerScript.cs" t="Include" />
+              <e p="SoundTest.cs" t="Include" />
+              <e p="TouchGameSettings.cs" t="Include" />
+              <e p="TouchGoal.cs" t="Include" />
+              <e p="TouchPlayer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="HFTInstructionsEditor.cs" t="Include" />
+              <e p="HFTReadmeEditor.cs" t="Include" />
+              <e p="HFTReadmeFileEditor.cs" t="Include" />
+              <e p="HFTReadmeWindow.cs" t="Include" />
+            </e>
+            <e p="HFTColorUtils.cs" t="Include" />
+            <e p="HFTDirInfo.cs" t="Include" />
+            <e p="HFTGamepad.cs" t="Include" />
+            <e p="HFTGamepadHelper.cs" t="Include" />
+            <e p="HFTGlobalSoundHelper.cs" t="Include" />
+            <e p="HFTGyroscope.cs" t="Include" />
+            <e p="HFTInput.cs" t="Include" />
+            <e p="HFTInstructions.cs" t="Include" />
+            <e p="HFTPlayerNameManager.cs" t="Include" />
+            <e p="HFTReadme.cs" t="Include" />
+            <e p="HFTReadmeFile.cs" t="Include" />
+            <e p="HFTReadmeUtils.cs" t="Include" />
+            <e p="HFTSoundPlayer.cs" t="Include" />
+            <e p="HFTSounds.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="HSVRangeShader.shader" t="Include" />
+          </e>
+          <e p="Tests" t="Include">
+            <e p="Scenes" t="Include">
+              <e p="DNSTest-README.txt" t="Include" />
+              <e p="StartStopTest-README.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="HFTDnsTest.cs" t="Include" />
+              <e p="HFTStartStopTest.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="HappyFunTimes-1.x-to-2.x-Migration-README.txt" t="Include" />
+        <e p="HappyFunTimes-README.txt" t="Include" />
+        <e p="JMO Assets" t="Include">
+          <e p="!JMO Assets Readme.txt" t="Include" />
+          <e p="Toony Colors Pro" t="Include">
+            <e p="!ToonyColorsPro Readme.txt" t="Include" />
+            <e p="Demo TCP2" t="Include">
+              <e p="Cat Demo Assets" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="TCP2_Demo_Camera.cs" t="Include" />
+                  <e p="TCP2_Demo_Cat.cs" t="Include" />
+                  <e p="TCP2_Demo_GammaLinear.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="Cat Demo" t="Include">
+                    <e p="Cat" t="Include">
+                      <e p="Style 1.shader" t="Include" />
+                      <e p="Style 2.shader" t="Include" />
+                      <e p="Style 3.shader" t="Include" />
+                      <e p="Style 4.shader" t="Include" />
+                      <e p="Style 5.shader" t="Include" />
+                      <e p="Style 6.shader" t="Include" />
+                    </e>
+                    <e p="Decal.shader" t="Include" />
+                    <e p="Ground.shader" t="Include" />
+                    <e p="UnityChan" t="Include">
+                      <e p="Style 1 Skin.shader" t="Include" />
+                      <e p="Style 1.shader" t="Include" />
+                      <e p="Style 3 Skin.shader" t="Include" />
+                      <e p="Style 3.shader" t="Include" />
+                      <e p="Style 4 Skin.shader" t="Include" />
+                      <e p="Style 4.shader" t="Include" />
+                      <e p="Style 5 Skin.shader" t="Include" />
+                      <e p="Style 5.shader" t="Include" />
+                      <e p="Style 6 Skin.shader" t="Include" />
+                      <e p="Style 6.shader" t="Include" />
+                    </e>
+                    <e p="UnlitVertexColorsTransparent.shader" t="Include" />
+                    <e p="Vertex Colors Emissive.shader" t="Include" />
+                    <e p="Vertex Colors Specular.shader" t="Include" />
+                    <e p="Vertex Colors.shader" t="Include" />
+                    <e p="Water.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="UnityChan License.txt" t="Include" />
+              </e>
+              <e p="SG Demo Assets" t="Include">
+                <e p="_Misc Assets" t="Include">
+                  <e p="TCP2_Demo_3DText.shader" t="Include" />
+                </e>
+              </e>
+              <e p="TCP2 Demo Assets" t="Include">
+                <e p="Cubemaps" t="Include">
+                  <e p="Cubemaps License.txt" t="Include" />
+                </e>
+                <e p="Misc" t="Include">
+                  <e p="TCP2_Demo.cs" t="Include" />
+                  <e p="TCP2_Demo_PBS.cs" t="Include" />
+                  <e p="TCP2_Demo_PBS_View.cs" t="Include" />
+                  <e p="TCP2_Demo_View.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="Shader Templates" t="Include">
+                <e p="TCP2_ShaderTemplate_Default.txt" t="Include" />
+                <e p="TCP2_ShaderTemplate_Default_CurvedWorld.txt" t="Include" />
+                <e p="TCP2_ShaderTemplate_PBS.txt" t="Include" />
+                <e p="TCP2_ShaderTemplate_SurfacePBS.txt" t="Include" />
+                <e p="TCP2_ShaderTemplate_Terrain.txt" t="Include" />
+                <e p="TCP2_ShaderTemplate_Water.txt" t="Include" />
+                <e p="TCP2_ShaderTemplate_Water_CurvedWorld.txt" t="Include" />
+              </e>
+              <e p="TCP2_Config.cs" t="Include" />
+              <e p="TCP2_GetPosOnWater_Editor.cs" t="Include" />
+              <e p="TCP2_GradientManager.cs" t="Include" />
+              <e p="TCP2_GUI.cs" t="Include" />
+              <e p="TCP2_MaterialInspector.cs" t="Include" />
+              <e p="TCP2_MaterialInspector_PBS.cs" t="Include" />
+              <e p="TCP2_MaterialInspector_PBS_SG.cs" t="Include" />
+              <e p="TCP2_MaterialInspector_SG.cs" t="Include" />
+              <e p="TCP2_MaterialInspector_SurfacePBS_SG.cs" t="Include" />
+              <e p="TCP2_Menu.cs" t="Include" />
+              <e p="TCP2_OutlineInspector.cs" t="Include" />
+              <e p="TCP2_RampGenerator.cs" t="Include" />
+              <e p="TCP2_ShaderGenerator.cs" t="Include" />
+              <e p="TCP2_ShaderGenerator.UIFeatures.cs" t="Include" />
+              <e p="TCP2_ShaderUpdateUnityTime_Editor.cs" t="Include" />
+              <e p="TCP2_SmoothedNormalsUtility.cs" t="Include" />
+              <e p="Utils" t="Include">
+                <e p="TCP2_ExpressionParser.cs" t="Include" />
+                <e p="TCP2_ShaderGeneratorUtils.cs" t="Include" />
+                <e p="TCP2_Utils.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="TCP2_CameraDepth.cs" t="Include" />
+              <e p="TCP2_GetPosOnWater.cs" t="Include" />
+              <e p="TCP2_PlanarReflection.cs" t="Include" />
+              <e p="TCP2_RuntimeUtils.cs" t="Include" />
+              <e p="TCP2_ShaderUpdateUnityTime.cs" t="Include" />
+            </e>
+            <e p="Shaders 2.0" t="Include">
+              <e p="Include" t="Include">
+                <e p="TCP2_Include.cginc" t="Include" />
+                <e p="TCP2_Outline.shader" t="Include" />
+                <e p="TCP2_Outline_Behind.shader" t="Include" />
+                <e p="TCP2_Outline_Behind_SM2.shader" t="Include" />
+                <e p="TCP2_Outline_Include.cginc" t="Include" />
+                <e p="TCP2_Outline_SM2.shader" t="Include" />
+                <e p="TCP2_Outline_Stencil.shader" t="Include" />
+              </e>
+              <e p="TCP2_Desktop.shader" t="Include" />
+              <e p="TCP2_Mobile.shader" t="Include" />
+              <e p="TCP2_OutlineOnly Blended SM2.shader" t="Include" />
+              <e p="TCP2_OutlineOnly Blended.shader" t="Include" />
+              <e p="TCP2_OutlineOnly SM2.shader" t="Include" />
+              <e p="TCP2_OutlineOnly.shader" t="Include" />
+              <e p="Variants" t="Include">
+                <e p="TCP2_Desktop_Reflection.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_Rim.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_Rim_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_Rim_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_RimOutline.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_RimOutline_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Reflection_RimOutline_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Rim.shader" t="Include" />
+                <e p="TCP2_Desktop_Rim_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Rim_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_RimOutline.shader" t="Include" />
+                <e p="TCP2_Desktop_RimOutline_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_RimOutline_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_Rim.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_Rim_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_Rim_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_RimOutline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_RimOutline_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Reflection_RimOutline_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Rim.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Rim_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Rim_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_RimOutline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_RimOutline_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_RimOutline_OutlineBlending.shader" t="Include" />
+              </e>
+              <e p="Variants Base" t="Include">
+                <e p="TCP2_Desktop_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_Outline.shader" t="Include" />
+                <e p="TCP2_Desktop_Specular_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Mobile_Outline.shader" t="Include" />
+                <e p="TCP2_Mobile_OutlineBlending.shader" t="Include" />
+                <e p="TCP2_Mobile_Specular.shader" t="Include" />
+                <e p="TCP2_Mobile_Specular_Outline.shader" t="Include" />
+                <e p="TCP2_Mobile_Specular_OutlineBlending.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders 2.0 Generated" t="Include">
+              <e p="Examples" t="Include">
+                <e p="Default" t="Include">
+                  <e p="Comic Book.shader" t="Include" />
+                  <e p="Dissolve.shader" t="Include" />
+                  <e p="HSV.shader" t="Include" />
+                  <e p="Old School.shader" t="Include" />
+                  <e p="Sketch.shader" t="Include" />
+                  <e p="Snow Accumulation.shader" t="Include" />
+                  <e p="Subsurface Scattering.shader" t="Include" />
+                </e>
+                <e p="PBS" t="Include">
+                  <e p="Blended Outline.shader" t="Include" />
+                  <e p="Hand Painted.shader" t="Include" />
+                  <e p="Outline Behind.shader" t="Include" />
+                  <e p="Sketch.shader" t="Include" />
+                </e>
+                <e p="Water" t="Include">
+                  <e p="Lava Cartoon.shader" t="Include" />
+                  <e p="Lava.shader" t="Include" />
+                  <e p="Poison.shader" t="Include" />
+                  <e p="Realistic.shader" t="Include" />
+                  <e p="Reflection.shader" t="Include" />
+                  <e p="Water WindWaker.shader" t="Include" />
+                  <e p="Water WindWaker2.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Shaders PBS" t="Include">
+              <e p="TCP2_PBS_BRDF.cginc" t="Include" />
+              <e p="TCP2_PBS_Core.cginc" t="Include" />
+              <e p="TCP2_PBS_Main.cginc" t="Include" />
+              <e p="TCP2_PBS_ShadowMeta.shader" t="Include" />
+              <e p="TCP2_Standard PBS (Specular).shader" t="Include" />
+              <e p="TCP2_Standard PBS Outline (Specular).shader" t="Include" />
+              <e p="TCP2_Standard PBS Outline Blended (Specular).shader" t="Include" />
+              <e p="TCP2_Standard PBS Outline Blended.shader" t="Include" />
+              <e p="TCP2_Standard PBS Outline.shader" t="Include" />
+              <e p="TCP2_Standard PBS.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="LowPolyWaterv2" t="Include">
+          <e p="Demos" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DemoFreeFlyCamera.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="LPWInspector.cs" t="Include" />
+            <e p="LPWShaderGUI.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="LowPolyWaterScript.cs" t="Include" />
+            <e p="src" t="Include">
+              <e p="LPWDepthEffect.cs" t="Include" />
+              <e p="LPWDisplace.cs" t="Include" />
+              <e p="LPWHiddenProps.cs" t="Include" />
+              <e p="LPWNoise.cs" t="Include" />
+              <e p="LPWNormalSolver.cs" t="Include" />
+              <e p="LPWReflection.cs" t="Include" />
+              <e p="LPWWaterChunk.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="LowPolyWaterAdvanced.shader" t="Include" />
+            <e p="LowPolyWaterLite.shader" t="Include" />
+            <e p="LPWCompatibility.cginc" t="Include" />
+            <e p="LPWLighting.cginc" t="Include" />
+            <e p="LPWLite.cginc" t="Include" />
+            <e p="LPWNoise.cginc" t="Include" />
+            <e p="LPWReflection.cginc" t="Include" />
+            <e p="LPWRenderDepth.shader" t="Include" />
+            <e p="LPWRipples.cginc" t="Include" />
+            <e p="LPWShoreBlend.cginc" t="Include" />
+            <e p="LPWStandard.cginc" t="Include" />
+            <e p="LPWWaves.cginc" t="Include" />
+          </e>
+        </e>
+        <e p="PostProcessing" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Attributes" t="Include">
+              <e p="PostProcessingModelEditorAttribute.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="AmbientOcclusionModelEditor.cs" t="Include" />
+              <e p="AntialiasingModelEditor.cs" t="Include" />
+              <e p="BloomModelEditor.cs" t="Include" />
+              <e p="BuiltinDebugViewsEditor.cs" t="Include" />
+              <e p="ChromaticAberrationEditor.cs" t="Include" />
+              <e p="ColorGradingModelEditor.cs" t="Include" />
+              <e p="DefaultPostFxModelEditor.cs" t="Include" />
+              <e p="DepthOfFieldModelEditor.cs" t="Include" />
+              <e p="DitheringModelEditor.cs" t="Include" />
+              <e p="EyeAdaptationModelEditor.cs" t="Include" />
+              <e p="FogModelEditor.cs" t="Include" />
+              <e p="GrainModelEditor.cs" t="Include" />
+              <e p="MotionBlurModelEditor.cs" t="Include" />
+              <e p="ScreenSpaceReflectionModelEditor.cs" t="Include" />
+              <e p="UserLutModelEditor.cs" t="Include" />
+              <e p="VignetteModelEditor.cs" t="Include" />
+            </e>
+            <e p="Monitors" t="Include">
+              <e p="HistogramMonitor.cs" t="Include" />
+              <e p="ParadeMonitor.cs" t="Include" />
+              <e p="VectorscopeMonitor.cs" t="Include" />
+              <e p="WaveformMonitor.cs" t="Include" />
+            </e>
+            <e p="PostProcessingBehaviourEditor.cs" t="Include" />
+            <e p="PostProcessingFactory.cs" t="Include" />
+            <e p="PostProcessingInspector.cs" t="Include" />
+            <e p="PostProcessingModelEditor.cs" t="Include" />
+            <e p="PostProcessingMonitor.cs" t="Include" />
+            <e p="PropertyDrawers" t="Include">
+              <e p="GetSetDrawer.cs" t="Include" />
+              <e p="MinDrawer.cs" t="Include" />
+              <e p="TrackballGroupDrawer.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="CurveEditor.cs" t="Include" />
+              <e p="EditorGUIHelper.cs" t="Include" />
+              <e p="EditorResources.cs" t="Include" />
+              <e p="FxStyles.cs" t="Include" />
+              <e p="ReflectionUtils.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor Resources" t="Include">
+            <e p="Monitors" t="Include">
+              <e p="HistogramCompute.compute" t="Include" />
+              <e p="HistogramRender.shader" t="Include" />
+              <e p="ParadeRender.shader" t="Include" />
+              <e p="VectorscopeCompute.compute" t="Include" />
+              <e p="VectorscopeRender.shader" t="Include" />
+              <e p="WaveformCompute.compute" t="Include" />
+              <e p="WaveformRender.shader" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="CurveBackground.shader" t="Include" />
+              <e p="Trackball.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Resources" t="Include">
+            <e p="Bluenoise64" t="Include">
+              <e p="COPYING.txt" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="ACES.cginc" t="Include" />
+              <e p="AmbientOcclusion.cginc" t="Include" />
+              <e p="AmbientOcclusion.shader" t="Include" />
+              <e p="Blit.shader" t="Include" />
+              <e p="Bloom.cginc" t="Include" />
+              <e p="Bloom.shader" t="Include" />
+              <e p="BuiltinDebugViews.shader" t="Include" />
+              <e p="ColorGrading.cginc" t="Include" />
+              <e p="Common.cginc" t="Include" />
+              <e p="DepthOfField.cginc" t="Include" />
+              <e p="DepthOfField.shader" t="Include" />
+              <e p="DiskKernels.cginc" t="Include" />
+              <e p="EyeAdaptation.cginc" t="Include" />
+              <e p="EyeAdaptation.shader" t="Include" />
+              <e p="EyeHistogram.compute" t="Include" />
+              <e p="Fog.shader" t="Include" />
+              <e p="FXAA.shader" t="Include" />
+              <e p="FXAA3.cginc" t="Include" />
+              <e p="GrainGen.shader" t="Include" />
+              <e p="LutGen.shader" t="Include" />
+              <e p="MotionBlur.cginc" t="Include" />
+              <e p="MotionBlur.shader" t="Include" />
+              <e p="ScreenSpaceRaytrace.cginc" t="Include" />
+              <e p="ScreenSpaceReflection.shader" t="Include" />
+              <e p="TAA.cginc" t="Include" />
+              <e p="TAA.shader" t="Include" />
+              <e p="Tonemapping.cginc" t="Include" />
+              <e p="Uber.shader" t="Include" />
+              <e p="UberSecondPass.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="Attributes" t="Include">
+              <e p="GetSetAttribute.cs" t="Include" />
+              <e p="MinAttribute.cs" t="Include" />
+              <e p="TrackballAttribute.cs" t="Include" />
+              <e p="TrackballGroupAttribute.cs" t="Include" />
+            </e>
+            <e p="Components" t="Include">
+              <e p="AmbientOcclusionComponent.cs" t="Include" />
+              <e p="BloomComponent.cs" t="Include" />
+              <e p="BuiltinDebugViewsComponent.cs" t="Include" />
+              <e p="ChromaticAberrationComponent.cs" t="Include" />
+              <e p="ColorGradingComponent.cs" t="Include" />
+              <e p="DepthOfFieldComponent.cs" t="Include" />
+              <e p="DitheringComponent.cs" t="Include" />
+              <e p="EyeAdaptationComponent.cs" t="Include" />
+              <e p="FogComponent.cs" t="Include" />
+              <e p="FxaaComponent.cs" t="Include" />
+              <e p="GrainComponent.cs" t="Include" />
+              <e p="MotionBlurComponent.cs" t="Include" />
+              <e p="ScreenSpaceReflectionComponent.cs" t="Include" />
+              <e p="TaaComponent.cs" t="Include" />
+              <e p="UserLutComponent.cs" t="Include" />
+              <e p="VignetteComponent.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="AmbientOcclusionModel.cs" t="Include" />
+              <e p="AntialiasingModel.cs" t="Include" />
+              <e p="BloomModel.cs" t="Include" />
+              <e p="BuiltinDebugViewsModel.cs" t="Include" />
+              <e p="ChromaticAberrationModel.cs" t="Include" />
+              <e p="ColorGradingModel.cs" t="Include" />
+              <e p="DepthOfFieldModel.cs" t="Include" />
+              <e p="DitheringModel.cs" t="Include" />
+              <e p="EyeAdaptationModel.cs" t="Include" />
+              <e p="FogModel.cs" t="Include" />
+              <e p="GrainModel.cs" t="Include" />
+              <e p="MotionBlurModel.cs" t="Include" />
+              <e p="ScreenSpaceReflectionModel.cs" t="Include" />
+              <e p="UserLutModel.cs" t="Include" />
+              <e p="VignetteModel.cs" t="Include" />
+            </e>
+            <e p="PostProcessingBehaviour.cs" t="Include" />
+            <e p="PostProcessingComponent.cs" t="Include" />
+            <e p="PostProcessingContext.cs" t="Include" />
+            <e p="PostProcessingModel.cs" t="Include" />
+            <e p="PostProcessingProfile.cs" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="ColorGradingCurve.cs" t="Include" />
+              <e p="GraphicsUtils.cs" t="Include" />
+              <e p="MaterialFactory.cs" t="Include" />
+              <e p="RenderTextureFactory.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Utilities" t="Include">
+            <e p="CustomMotionTexture" t="Include">
+              <e p="ExampleWheelController.cs" t="Include" />
+              <e p="Shaders" t="Include">
+                <e p="CustomMotionVectorTexture.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AddForce.cs" t="Include" />
+          <e p="CubeInsteadOfRaycast.cs" t="Include" />
+          <e p="dishApearOnPhone.cs" t="Include" />
+          <e p="DishAppear.cs" t="Include" />
+          <e p="FontController.cs" t="Include" />
+          <e p="HandsOnPlate.cs" t="Include" />
+          <e p="IntServerBackchannelDishes.cs" t="Include" />
+          <e p="OnPlate.cs" t="Include" />
+          <e p="PlatePosition.cs" t="Include" />
+          <e p="PlayerMove.cs" t="Include" />
+          <e p="PotatoesCollider.cs" t="Include" />
+          <e p="PotatoSwitchControl.cs" t="Include" />
+          <e p="PotRotating.cs" t="Include" />
+          <e p="RaycastCubeController.cs" t="Include" />
+          <e p="RaycastingControllerFromPlate.cs" t="Include" />
+          <e p="ScoreController.cs" t="Include" />
+          <e p="TimerController.cs" t="Include" />
+        </e>
+        <e p="SD Citizen Characters - Volume01" t="Include">
+          <e p="ReadMe (SD Citizen Characters - Volume01).txt" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="Sources" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Toony-Lighted.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Virtence" t="Include">
+          <e p="VText" t="Include">
+            <e p="_DemoScene" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="GUI_Handler.cs" t="Include" />
+                <e p="TimeTexter.cs" t="Include" />
+                <e p="VtextHandler.cs" t="Include" />
+              </e>
+              <e p="Shader" t="Include">
+                <e p="Chrome.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="VTextEditor.cs" t="Include" />
+              <e p="VTextSetup.cs" t="Include" />
+            </e>
+            <e p="Shader" t="Include">
+              <e p="UnlitWhite.shader" t="Include" />
+            </e>
+            <e p="VFontHash.cs" t="Include" />
+            <e p="VFontInfo.cs" t="Include" />
+            <e p="VGlyphInfo.cs" t="Include" />
+            <e p="VTextInterface.cs" t="Include" />
+          </e>
+        </e>
+        <e p="WebPlayerTemplates" t="Include">
+          <e p="HappyFunTimes" t="Include">
+            <e p="controllers" t="Include">
+              <e p="gamepad" t="Include">
+                <e p="sounds" t="Include">
+                  <e p="sounds.jsfx.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Omochi2.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
