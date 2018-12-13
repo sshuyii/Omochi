@@ -67,12 +67,12 @@ namespace EasyWiFi.ServerControls
         {
             //由于世界坐标系和unity坐标系不同，对轴进行更改
             orientation.w = gyro[index].GYRO_W;
-            orientation.x = -gyro[index].GYRO_X;
+            orientation.x = gyro[index].GYRO_X;
             orientation.y = -gyro[index].GYRO_Z;
-            orientation.z = -gyro[index].GYRO_Y;
+            orientation.z = gyro[index].GYRO_Y;
             
             //游戏过程中陀螺仪的数据传入后再和玩家初始方向比较，得到的结果是盘子的旋转值
-            transform.localRotation = Quaternion.Inverse(averageOrientation) * orientation;
+            transform.rotation = Quaternion.Inverse(averageOrientation) * orientation;
         }
         
         
@@ -87,9 +87,9 @@ namespace EasyWiFi.ServerControls
         private void CalculateAverage(int index) //计算玩家初始角度
         {
             orientation.w = gyro[index].GYRO_W;
-            orientation.x = -gyro[index].GYRO_X;
+            orientation.x = gyro[index].GYRO_X;
             orientation.y = -gyro[index].GYRO_Z;
-            orientation.z = -gyro[index].GYRO_Y;
+            orientation.z = gyro[index].GYRO_Y;
             
             //对每次获取的陀螺仪角度求平均值
             averageOrientation.w = (averageOrientation.w * AverageCount + orientation.w) / (AverageCount + 1);

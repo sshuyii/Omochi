@@ -750,13 +750,51 @@
           <e p="AddForce.cs" t="Include" />
           <e p="dishApearOnPhone.cs" t="Include" />
           <e p="DishAppear.cs" t="Include" />
+          <e p="HandsOnPlate.cs" t="Include" />
           <e p="IntServerBackchannelDishes.cs" t="Include" />
           <e p="OnPlate.cs" t="Include" />
           <e p="PlatePosition.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="PotatoesCollider.cs" t="Include" />
           <e p="PotatoSwitchControl.cs" t="Include" />
+          <e p="PotRotating.cs" t="Include" />
           <e p="RaycastingControllerFromPlate.cs" t="Include" />
+          <e p="ScoreController.cs" t="Include" />
+        </e>
+        <e p="SD Citizen Characters - Volume01" t="Include">
+          <e p="ReadMe (SD Citizen Characters - Volume01).txt" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="Sources" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Toony-Lighted.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Virtence" t="Include">
+          <e p="VText" t="Include">
+            <e p="_DemoScene" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="GUI_Handler.cs" t="Include" />
+                <e p="TimeTexter.cs" t="Include" />
+                <e p="VtextHandler.cs" t="Include" />
+              </e>
+              <e p="Shader" t="Include">
+                <e p="Chrome.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="VTextEditor.cs" t="Include" />
+              <e p="VTextSetup.cs" t="Include" />
+            </e>
+            <e p="Shader" t="Include">
+              <e p="UnlitWhite.shader" t="Include" />
+            </e>
+            <e p="VFontHash.cs" t="Include" />
+            <e p="VFontInfo.cs" t="Include" />
+            <e p="VGlyphInfo.cs" t="Include" />
+            <e p="VTextInterface.cs" t="Include" />
+          </e>
         </e>
         <e p="WebPlayerTemplates" t="Include">
           <e p="HappyFunTimes" t="Include">

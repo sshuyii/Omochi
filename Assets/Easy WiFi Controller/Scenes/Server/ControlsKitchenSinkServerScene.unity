@@ -1666,7 +1666,7 @@ Camera:
     y: 0
     width: 0.5
     height: 1
-  near clip plane: 0.55
+  near clip plane: 0.25
   far clip plane: 1000
   field of view: 74
   orthographic: 0
@@ -1692,13 +1692,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 147740728}
-  m_LocalRotation: {x: 0.17841528, y: -0.000000089406946, z: 0.000000022351736, w: 0.98395526}
-  m_LocalPosition: {x: -0.006, y: 0.676, z: -0.792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.006, y: 0.268, z: -0.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1913937049}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 20.555, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &147740734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,7 +2112,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7883,7 +7883,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10950,7 +10950,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11026,24 +11026,24 @@ MonoBehaviour:
   TextCollision: {fileID: 993599330}
   DishType: 0
   OnPlate: 0
-  PeaText: {fileID: 0}
-  BananaText: {fileID: 0}
-  CarrotText: {fileID: 0}
-  PumpkinText: {fileID: 0}
-  PotatoText: {fileID: 0}
-  MushroomText: {fileID: 0}
-  OnionText: {fileID: 0}
-  TomatoText: {fileID: 0}
-  GarlicText: {fileID: 0}
-  ShrimpText: {fileID: 0}
-  MeatballText: {fileID: 0}
-  SausageText: {fileID: 0}
-  ChickenText: {fileID: 0}
-  SteakText: {fileID: 0}
-  CrayfishText: {fileID: 0}
-  BaconText: {fileID: 0}
-  CrabText: {fileID: 0}
-  TempuraText: {fileID: 0}
+  PeaText: {fileID: 1535470130}
+  BananaText: {fileID: 1535470130}
+  CarrotText: {fileID: 1535470130}
+  PumpkinText: {fileID: 1535470130}
+  PotatoText: {fileID: 1535470130}
+  MushroomText: {fileID: 1535470130}
+  OnionText: {fileID: 1535470130}
+  TomatoText: {fileID: 1535470130}
+  GarlicText: {fileID: 1535470130}
+  ShrimpText: {fileID: 1535470130}
+  MeatballText: {fileID: 1535470130}
+  SausageText: {fileID: 1535470130}
+  ChickenText: {fileID: 1535470130}
+  SteakText: {fileID: 1535470130}
+  CrayfishText: {fileID: 1535470130}
+  BaconText: {fileID: 1535470130}
+  CrabText: {fileID: 1535470130}
+  TempuraText: {fileID: 1535470130}
   player: 0
 --- !u!65 &898199676
 BoxCollider:
@@ -15433,15 +15433,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2.2048576
+      value: 4.0531898
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.52665
+      value: 2.8064406
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_LocalScale.z
-      value: 2.20485
+      value: 4.0531754
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 642eb462b78344f8b9e8cfaecfae9c01, type: 2}
       propertyPath: m_Name
@@ -15580,6 +15580,72 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7bc013a908c85b74896c26129882ae3f, type: 3}
+--- !u!1 &1247551882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247551884}
+  - component: {fileID: 1247551883}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1247551883
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1247551882}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 4.8
+  m_Range: 15.8
+  m_SpotAngle: 108
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1247551884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1247551882}
+  m_LocalRotation: {x: 0.5844872, y: -0.3979632, z: -0.3979632, w: 0.5844872}
+  m_LocalPosition: {x: -12.7, y: 4.132, z: -0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 158.5, y: 90, z: 90}
 --- !u!1 &1247990775
 GameObject:
   m_ObjectHideFlags: 0
@@ -17365,7 +17431,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17774,6 +17840,72 @@ Transform:
   m_Father: {fileID: 844627955}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1451446335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451446337}
+  - component: {fileID: 1451446336}
+  m_Layer: 0
+  m_Name: Spot Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1451446336
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451446335}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 4.8
+  m_Range: 15.8
+  m_SpotAngle: 108
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1451446337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451446335}
+  m_LocalRotation: {x: 0.57745284, y: 0.40810326, z: 0.4081033, w: 0.5774528}
+  m_LocalPosition: {x: 12.7, y: 4.132, z: -0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 19.5, y: 90.00001, z: 90.00001}
 --- !u!1 &1452768098
 GameObject:
   m_ObjectHideFlags: 0
@@ -18277,7 +18409,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20280,7 +20412,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20335,7 +20467,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1663168547}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -0.133}
+  m_LocalPosition: {x: -0.121, y: 0.976, z: -0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1233954495}
@@ -22963,7 +23095,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24204,6 +24336,10 @@ Prefab:
       propertyPath: m_Name
       value: Meat bowl
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
   m_IsPrefabAsset: 0
@@ -26078,7 +26214,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: de99f8deaff984ec58199f8f19f1c37d, type: 3}
+  - {fileID: 2100000, guid: fcd11dc8c52a6409fbad2586643a7300, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
