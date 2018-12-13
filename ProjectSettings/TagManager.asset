@@ -42,6 +42,15 @@ TagManager:
   - Crab
   - Player1Text
   - Player2Text
+  - CrayfishT
+  - BaconT
+  - SteakT
+  - ShrimpT
+  - MeatballT
+  - SausageT
+  - ChickenT
+  - TempuraT
+  - CrabT
   layers:
   - Default
   - TransparentFX
