@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
 using EasyWiFi.Core;
-using System;
+using Rewired;
+using Rewired.ControllerExtensions;
 
 namespace EasyWiFi.ServerControls
 {
 
     [AddComponentMenu("EasyWiFiController/Server/UserControls/Match Orientation Gyro")]
-    public class MatchOrientationGyroServerController : MonoBehaviour, IServerController
+    public class MatchOrientationGyroServerController : MonoBehaviour
     {
 
         public string control = "Gyro";
-        public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player2;
+        //public EasyWiFiConstants.PLAYER_NUMBER player = EasyWiFiConstants.PLAYER_NUMBER.Player2;
 
         //runtime variables
         GyroControllerType[] gyro = new GyroControllerType[EasyWiFiConstants.MAX_CONTROLLERS];
@@ -24,44 +24,69 @@ namespace EasyWiFi.ServerControls
         private int AverageCount = 0;            //计算平均值的次数
         private float calculateTime = 0;         //计算平均值的总时长
         private Quaternion averageOrientation;   //计算得到的平均值
+        
+        //using controller as input
+        private Player player { get { return ReInput.players.GetPlayer(playerId); } }
+        public int playerId = 0;
 
-        void OnEnable()
-        {
-            EasyWiFiController.On_ConnectionsChanged += checkForNewConnections;
 
-            //do one check at the beginning just in case we're being spawned after startup and after the callbacks
-            //have already been called
-            if (gyro[0] == null && EasyWiFiController.lastConnectedPlayerNumber >= 0)
-            {
-                EasyWiFiUtilities.checkForClient(control, (int)player, ref gyro, ref currentNumberControllers);
-            }
-        }
 
-        void OnDestroy()
-        {
-            EasyWiFiController.On_ConnectionsChanged -= checkForNewConnections;
-        }
+//        void OnEnable()
+//        {
+//            EasyWiFiController.On_ConnectionsChanged += checkForNewConnections;
+//
+//            //do one check at the beginning just in case we're being spawned after startup and after the callbacks
+//            //have already been called
+//            if (gyro[0] == null && EasyWiFiController.lastConnectedPlayerNumber >= 0)
+//            {
+//                EasyWiFiUtilities.checkForClient(control, (int)player, ref gyro, ref currentNumberControllers);
+//            }
+//        }
+
+//        void OnDestroy()
+//        {
+//            EasyWiFiController.On_ConnectionsChanged -= checkForNewConnections;
+//        }
 
         // Update is called once per frame
         void Update()
         {
-            //iterate over the current number of connected controllers
-            for (int i = 0; i < currentNumberControllers; i++)
+            
+            var ds4 = GetFirstDS4(player);
+            
+            if (ds4 != null)
             {
-                if (gyro[i] != null && gyro[i].serverKey != null && gyro[i].logicalPlayerNumber != EasyWiFiConstants.PLAYERNUMBER_DISCONNECTED)
-                {
-                    if (isStartAverage)
-                    {
-                        CalculateAverage(i);            //如果还在计算平均值（玩家准备的三秒时间内），就继续计算平均值
-                    }
-                    if (isEndAverage)
-                    {
-                        mapDataStructureToAction(i);    //如果算完了（游戏正式开始），就把陀螺仪的数据传给盘子
-                    }
-                }
+                // Set the model's rotation to match the controller's
+                transform.rotation = ds4.GetOrientation();
             }
+
+
+            //iterate over the current number of connected controllers
+//            for (int i = 0; i < currentNumberControllers; i++)
+//            {
+////                if (gyro[i] != null && gyro[i].serverKey != null && gyro[i].logicalPlayerNumber != EasyWiFiConstants.PLAYERNUMBER_DISCONNECTED)
+////                {
+//                    if (isStartAverage)
+//                    {
+//                        CalculateAverage(i);            //如果还在计算平均值（玩家准备的三秒时间内），就继续计算平均值
+//                    }
+//                    if (isEndAverage)
+//                    {
+//                        mapDataStructureToAction(i);    //如果算完了（游戏正式开始），就把陀螺仪的数据传给盘子
+//                    }
+////                }
+//            }
         }
 
+        private IDualShock4Extension GetFirstDS4(Player player) {
+            foreach(Joystick j in player.controllers.Joysticks) {
+                // Use the interface because it works for both PS4 and desktop platforms
+                IDualShock4Extension ds4 = j.GetExtension<IDualShock4Extension>();
+                if(ds4 == null) continue;
+                return ds4;
+            }
+            return null;
+        }
 
         public void mapDataStructureToAction(int index)
         {
@@ -132,10 +157,10 @@ namespace EasyWiFi.ServerControls
         }
         
 
-        public void checkForNewConnections(bool isConnect, int playerNumber)
-        {
-            EasyWiFiUtilities.checkForClient(control, (int)player, ref gyro, ref currentNumberControllers);
-        }
+//        public void checkForNewConnections(bool isConnect, int playerNumber)
+//        {
+//            EasyWiFiUtilities.checkForClient(control, (int)player, ref gyro, ref currentNumberControllers);
+//        }
     }
 
 }

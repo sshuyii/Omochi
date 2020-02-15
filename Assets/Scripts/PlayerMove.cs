@@ -28,8 +28,27 @@ public class PlayerMove : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		moveL = GetComponent<StandardTouchpadServerController>().touchMoveYLeft * speed;
-		moveR = GetComponent<RightTouchpadServerController>().touchMoveYRight * speed;
+		//used for mobile input
+//		moveL = GetComponent<StandardTouchpadServerController>().touchMoveYLeft * speed;
+//		moveR = GetComponent<RightTouchpadServerController>().touchMoveYRight * speed;
+//		Vector3 move = transform.TransformDirection(new Vector3(0, 0, (moveL + moveR) / 2));
+//		v = (moveL + moveR) / 2;
+//		
+//		characterController.Move(move * Time.deltaTime);
+//		characterController.transform.Rotate(0, (moveL - moveR) / radius * Time.deltaTime, 0);
+//		w = (moveL - moveR) / radius;
+//		Vector3 movement = Vector3.zero;
+//		float vertSpeed = 0;
+//		if (!characterController.isGrounded)
+//		{
+//			vertSpeed -= 9.8f *  5 * Time.deltaTime;
+//		}
+//		movement.y = vertSpeed;
+//		characterController.Move(movement * Time.deltaTime);
+
+		//used for controller input
+		moveL = Input.GetAxis("LeftY") * speed;
+		moveR = Input.GetAxis("RightY") * speed;
 		Vector3 move = transform.TransformDirection(new Vector3(0, 0, (moveL + moveR) / 2));
 		v = (moveL + moveR) / 2;
 		
@@ -44,6 +63,10 @@ public class PlayerMove : MonoBehaviour
 		}
 		movement.y = vertSpeed;
 		characterController.Move(movement * Time.deltaTime);
+
+		
+		print("LeftY = " +  Input.GetAxis("LeftY"));
+		print("RightY = " +  Input.GetAxis("RightY"));
 
 	}
 

@@ -134,6 +134,9 @@ namespace EasyWiFi.ServerControls
                 touchMoveYLeft = 0;
             }
             printText.text = "touchMoveYLeft" + touchMoveYLeft;
+            
+            
+            
         }
         public void checkForNewConnections(bool isConnect, int playerNumber)
         {
